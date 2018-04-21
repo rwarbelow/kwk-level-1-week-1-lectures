@@ -19,9 +19,9 @@ Back in the day ('80s') computers only had a terminal to control them. (Show a p
 
 Later on, GUIs were created to make computers more accessible.
 
-+ Developers continue to use the terminal instead of the GUI because it makes you faster, more in control, you understand what's happening under the hood. If you're a developer, time is money (and your time is expensive).
+Developers continue to use the terminal instead of the GUI because it makes you faster, more in control, you understand what's happening under the hood. If you're a developer, time is money (and your time is expensive).
 
-+ Understanding the terminal is like being Neo from the matrix- you can see the secret hidden files on your computer. This is industry practice.
+Understanding the terminal is like being Neo from the matrix- you can see the secret hidden files on your computer. This is industry practice.
 
 ## Lesson Plan 
 
@@ -48,7 +48,8 @@ A directory can contain one of two things - files or other directories. The dire
 Let's check what directories are within the directory where you are standing by using `ls`, which stands for list (have students do this).
 
 ### `mkdir`
-+ Create a new directory called "development", using `mkdir`. This stands for make directory. (have students do this) `mkdir development`
+
+Create a new directory called "development", using `mkdir`. This stands for make directory. (have students do this) `mkdir development`
 
 ### `cd`
 
@@ -132,6 +133,6 @@ The Command Line is an incredibly valuable tool that lets you manipulate configu
 
 + The [Pets Organizer](https://github.com/learn-co-curriculum/kwk-l1-find-missing-pet) lab really hammers home paths. This is an important concept for students as they begin to create HTML/CSS projects and then their sinatra apps at the end of the course. Paths are a complicated concept- let students know its ok if it doesn't make sense right away.
 
-+ Bonus Labs are the [Terminus Game](https://github.com/learn-co-curriculum/kwk-l1-cli-stayfresh) and the [Command Line Challenge](https://github.com/learn-co-curriculum/kwk-l1-advanced-cli!
++ Bonus Labs are the [Terminus Game](https://github.com/learn-co-curriculum/kwk-l1-cli-stayfresh) and the [Command Line Challenge](https://github.com/learn-co-curriculum/kwk-l1-advanced-cli)
 
 + Helps to have students write out the instructions if they were moving one step at a time `cd code`, `cd labs` and then show them how they can shorten that `cd code/labs`.
