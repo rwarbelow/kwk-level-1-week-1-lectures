@@ -80,7 +80,7 @@ two_step
 two_step
 ```
 
-How would we tell the two_step to just keep on going, to never stop, just keep on repeating? _Do the dance, it never stops_
+How would we tell the two_step to just keep on going, to never stop, just keep on repeating? _Do the dance, it never stops_ (We're leading toward loops).
 
 Then also, let's think about this example. **Students should follow along**
 
@@ -146,4 +146,4 @@ The program gives an error.
 Undefined local variable or method `local_greeting` in `greeting`.
 ```
 
-Computers never lie, if it says it can't find the variable, it can't find it. So something is missing. We'll cover this tomorrow, get excited!!!
+Computers never lie, if it says it can't find the variable, it can't find it. So something is missing. We'll cover this tomorrow, get excited!!! (Leading toward arguments).

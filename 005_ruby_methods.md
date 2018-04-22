@@ -1,7 +1,8 @@
 # Ruby Methods - Full Lecture
 
 ## Objective
-***Students will be able to create and use their own custom methods***
+*
+Students will be able to create and use methods with arguments.
 
 ## SWBATS
 
@@ -22,235 +23,202 @@
 + METHODS - create a custom method using arguments
 
 ## Motivation
-+ Remember the cool drone we played with on day 1? We gave it commands using methods. [Show the class some of the code.] 
-```ruby
-    drone.take_off
-    sleep 5
-    drone.turn_right(1.0)
-    sleep 5
-    drone.turn_left(1.0)
-    sleep 5 
-    drone.hover.land [chaining]
-    sleep 5
-    drone.stop
-```
-+ Coding becomes powerful when you start writing your own methods like the ones used to control the drone. Soon you will know enough about methods to create your own drone army.
 
+We left off yesterday looking at methods. Methods allow us to name a sequence or selection of code and run it whenever we want.
 
-## Lesson Plan 
-+ A method is just a set of instructions that tells the computer to do something. They are awesome because they allow us to write code ONCE and then re-use it as many times as we want! 
-+ Call out someone in the class and start giving them commands. Write them on the board
-    ```
-    Close your computer
-    Put it in your bag
-    Stand up
-    Walk out the door
-    ```
-+ We can encompass these instructions in a method called go_home
-    + You need to give really explicit instructions to a computer when you create a method (just like we did)
-+ We use the following syntax to write a method and create a sort of code "block":
+Let's play with a `greeting` method in IRB **Students should follow along in IRB**
+
 ```ruby
-    def method_name
-        your code goes here! 
-    end
+def greeting
+  puts "Hi Jane, I'm Karlie, how's your afternoon?"
+end
+
+greeting
 ```
-+ We use the keyword `def` to DEFINE the method, followed by the name of the method, then some code in the middle and the keyword end to tell the computer that this method is complete.
-    + Share an example: 
+
+We mentioned that the data in that method really has 3 variables embedded in it and if we wanted to make the method more flexible, we'd need something like:
+
+`local_greeting` might be "What's up", or "Hey", or "Yo", or "Konichiwa"
+
+`your_name` might be "Alice" or "Shirley"
+
+`my_name` might be "Grace" or "Katherine"
+
+`time_of_day` might be "morning" or "night" or "afternoon"
+
+We might be able to use variables for this, let's try it, in IRB, students following along.
+
 ```ruby
-def go_home 
-     "Close your computer. Put it in your bag. Stand up. Walk out the door. Go to your house"
+local_greeting = "Shalom"
+your_name = "Golda"
+my_name = "Lea"
+time_of_day = "life"
+
+# The goal being to get a greeting of:
+#> "Shalom Golda, I'm Lea, how's your life?"
+
+def greeting
+  puts "#{local_greeting} #{your_name}, I'm #{my_name}, how's your #{time_of_day}?"
 end
 ```
-+ Try saving this and running it. Nothing happens. Ask if anyone knows why? Have the students discuss.
-+ Defining a method is like telling the computer how to do something, but then we need to also call the method to make the computer execute that code. 
-+ For example: who plays an instrument? Great! You contain the instructions on how to play the instrument inside of you. It's almost as if you have a play_instrument method in your brain, but is only activated when we say - please play_instrument. 
-+ If class has trouble with this analogy try the dictionary analogy - a dictionary contains the definitions of all the words, but we don't use these definition until we are actually saying the words or using them in a sentence.
-+ We call methods by writing the method name when we want to use it. Add call to the file and run it to show the class. 
+
+As we saw yesterday, that doesn't work. The reason why is an important programming concept called **scope**
+
+Variables have a locale, a place where they exist. We call the place in which a variable exists a "scope."
+
+**NEED GOOD SCOPE METAPHOR OR EXAMPLE - SOMETHING THAT EXISTS IN DIFFERENT PLACES, IS CALLED THE SAME, BUT GETS ITS OWN DEFINITION**
+
+Because of variable scope, a method only have access to information defined within it. We could do the following:
 
 ```ruby
-go_home
-```
-
-+ You still don't see the instructions to go home. Why? Ruby is running our method, we're just not telling it to print the return value:
-
-```ruby
-puts go_home
-```
-
-+ We never want to have the `puts` inside our method, but rather use it the print out the return value of a method. `puts` only prints in terminal and we'll use methods to handle a lot of backend logic for web apps, and people don't view web apps in the terminal
-
-+ ***Write a few more methods with class:*** How old will I be in 10 years? What is my name spelled backwards. Change all w's to v's.
-* ***Break and have them write and call methods in a lab***
-    + https://github.com/learn-co-curriculum/hs-ruby-2-methods-practice-lab 
-
-+ Every method that we write gives us something called a return value - this is what Ruby evaluates for us and gives us back to use in other parts of our program. The return value of our methods is the last line evaluated. 
-+ What would the return value of these methods be?
-    ```ruby
-    def hello_world
-        "Hello World"
-    end # returns "Hello World"
-
-    def one_plus_one
-        1 + 1 
-    end # returns 2 - ruby evaluates the line first
-    ```
-+ A return value is always going to be the result of the last line of code in a method. So what's the return value of the following method:
-
-```ruby
- def go_home 
-    "Close your computer"
-    "Put it in your bag"
-    "Stand up"
-    "Walk out the door" 
-    "Go to your house"
+def greeting
+  local_greeting = "Shalom"
+  your_name = "Golda"
+  my_name = "Lea"
+  time_of_day = "life"
+  
+  puts "#{local_greeting} #{your_name}, I'm #{my_name}, how's your #{time_of_day}?"
 end
 ```
-+ this method returns `Go to your house`.
 
-+ What does this method return? 
+But now that `greeting` method is very specific, we wouldn't be able to change it to say hello in a different way to a different person.
+
+## Arguments - 10 Minutes
+
+Lots of times in programming we can imagine "the code we wish we had." What I'd really want to be able to do is something like:
+
 ```ruby
- def go_home 
-    puts "Close your computer"
-    puts "Put it in your bag"
-    puts "Stand up"
-    puts "Walk out the door" 
-    puts "Go to your house"
+greeting("What's up", "Kim", "Kanye", "morning")
+#> "What's up Kim, I'm Kanye, how's your morning?"
+```
+
+We want to be able to pass the information into the method, sort of like a fill-in-the-blank madlibs, and have the method use those values. That would allow us to keep the method the same, but change the data it uses.
+
+```ruby
+greeting("What's up", "Kim", "Kanye", "morning")
+#> "What's up Kim, I'm Kanye, how's your morning?"
+greeting("Hey", "Beyonce", "Karlie", "night")
+#> "Hey Beyonce, I'm Karlie, how's your night?"
+```
+
+Let's actually try that - **have students define the base greeting method and then try to call it with those arguments, it will break, but that's good**
+
+```ruby
+def greeting  
+  puts "#{local_greeting} #{your_name}, I'm #{my_name}, how's your #{time_of_day}?"
 end
+
+greeting("Hey", "Beyonce", "Karlie", "night")
 ```
-+ Actually, it returns `nil`. Nil is Ruby's way to saying "nothing". Why would `puts` return nil? This is why we never want to have a method `puts` anything. `puts` only works in the terminal and we never view a web app in the terminal
-+ `puts` is a method - and it's only purpose is to print something to the screen. It doesn't evaluate anything it just prints out and returns NOTHING or nil. So the last line of our program is calling the puts method - which prints something to the screen AND returns nothing or nil
-+ Let's look at another example
+
+You will get: `ArgumentError: wrong number of arguments (given 4, expected 0)`
+
+Give the students 5-10 minutes to google `ruby method arguments` ruby and see if they can figure it out.
+
+Results they should see in google:
+
+https://learn.co/lessons/methods-default-arguments
+https://www.skorks.com/2009/08/method-arguments-in-ruby/
+http://codeloveandboards.com/blog/2014/02/05/ruby-and-method-arguments/
+https://ruby-doc.com/docs/ProgrammingRuby/html/tut_methods.html
+https://www.crondose.com/2016/09/comprehensive-guide-to-method-arguments-in-ruby/
+
+**Ask if anyone got it working and can explain it to the class**
+
+Continue to official explanation. 
+
+Arguments allow us to pass data into a method. They are sort of like protein-transfer receptors [Protein Transfer](http://nat5biopl.edubuzz.org/_/rsrc/1359400919033/unit-1-cell-biology/2-transport/IMG_0090.JPG?height=310&width=600) [Transport](http://nat5biopl.edubuzz.org/unit-1-cell-biology/2-transport). In the same way a Cell is a self-contained thing that has to take things from the outside world, a method is like that too.
+
+Let's simplify the `greeting` method (point out that it's always good to start with the simplest example when learning something new) and play with arguments.
+
+In the method signature, the `def` line, when defining a method name's, you can attach arguments. In `irb`, everyone play along.
+
 ```ruby
-def go_home
-    puts "Go home!" 
-    return "Go home!"
+def greeting(my_name)
+  puts "Hi, I'm #{my_name}"
 end
+
+greeting("Cardi B")
+#> Hi, I'm Cardi B
 ```
-+ What will this method return? Ruby read (evaluated) the last line of code and returned it to us. We weren't asking it to do anything so it just gave us back the string that was in the last line of code. 
-+ Try deleting "Go home!" from the last line of the method and replacing it with 1+1. What was the return value? 
-    + The important thing to remember is that Ruby reads code from top to bottom and will ALWAYS return the result of the last line of code
-    + We actually don't even need that word return. Ruby will automatically return that last line.
-+ This is important because as you write more complex programs, one method may rely on the return value of another. 
-+ Let's take a look at chaining. You guys have already done chaining. Remember string methods? How we would take "i love ruby" and print it in all caps and backwards. upcase.reverse
-+ The return value of upcase is important because reverse depends on it.
-+ Let's try chaining 
+
+Arguments go in parenthesis and just like variables, you can name them whatever you want. The name you use to define the argument will be the local variable inside the method that the piece of data will be referenced as.
 
 ```ruby
-def say_hello
-    puts "hello!"
-end 
-say_hello.upcase
-```
-+ This doesn't work! Why do we get this error message: `undefined method 'upcase' for nil:NilClass`
-+ Because puts returns nil. How might we make this work? 
-+ There are a ton of other pre-written Ruby methods like upcase and downcase that you can use. Different methods can be used on different data types. For example, you can use upcase on a string but not an integer or a float. They can be found [here](http://www.ruby-doc.org/core-2.1.1/) in the ruby docs: 
-+ Show class how to search for classes and methods
-+ Command F
-
-```ruby
-def go_home 
-     "Close your computer. Put it in your bag. Stand up. Walk out the door. Go to your house"
+def greeting(my_name)
+  puts "Hi, I'm #{my_name}"
 end
+
+greeting("Cardi B")
+greeting("Fergie")
+greeting()
 ```
-+ What if we wanted to reuse some of these instructions but instead of sending a student home we want to send them out to grab us some lunch.
-+ We can use something called an argument to feed them a location like this:
+
+Oh oh, once we define a method to have an argument, you have to call it with that argument, otherwise Ruby will throw an `ArgumentError`. You get an `ArgumentError` for sending arguments when a method doesn't accept them or not sending arguments when a method requires them.
+
+You can define multiple arguments with `,` in the method signature.
 
 ```ruby
-def go_for_lunch(location)
-    "Close your computer. Put it in your bag. Stand up. Walk out the door. Go to #{location} to pick up lunch"
+def greeting(my_name, your_name)
+  puts "Hi #{your_name}, I'm #{my_name}"
 end
+
+greeting("Cardi B", "Karlie")
+greeting("Fergie", "Karlie")
 ```
-+ Where would you guys like to send out our student? ***Get a location from the class.***
-+ Arguments allow us to pass information into a method and makes our code more flexible and reusable. 
-+ Let's do another example. What if I wanted to write a program that says hello to everyone in the classroom. Help me write this.
+
+You don't have to send literal data, like a literal String as a value for an argument, you can send references (variables)
 
 ```ruby
-def say_name(name) 
-    "Hello #{name}!" 
+def greeting(local_greeting, your_name, my_name, time_of_day)
+  puts "#{local_greeting} #{your_name}, I'm #{my_name}, how's your #{time_of_day}?"
 end
-```
-And how would we call this? `puts say_name("Vanessa")`, `puts say_name("Victoria")`
 
-+ When you call this method you can feed it any string that you want as the name - but remember it has to be a string.
-+ Everyone open up your text editor and write out this method and try calling it with different names.
-    + Say thing from CLI
-+ Methods don't always have to take in strings though. They can also take in numbers and multiple arguments at one time.
-For example:
-```ruby
-    def many_pets(species, number)
-         "I love #{species}! I have #{number}!"
-     end
-     puts many_pets("cats", 5)
+a = "Shalom"
+b = "Golda"
+c = "Lea"
+d = "life"
+
+greeting(a,b,c,d)
 ```
 
-Or this:
+**Method Argument Labs** 20 Minutes Max
+
+[Parrot Methods](https://github.com/learn-co-curriculum/kwk-l1-parrot-methods-lab)
+[Cell Transport Methods Lab](https://github.com/learn-co-curriculum/kwk-l1-cell-transport-methods-lab)
+[Geometry Formulas Methods Lab](https://github.com/learn-co-curriculum/kwk-l1-geometry-formuals-methods-lab)
+
+## Default Arguments - 5 Minutes
+
+Let's go back to our `greeting` method. There's a lot to specify in there. We have to pass 4 arguments every time! What if we wanted to make some things a default, so if we don't specify something, the method can still work? Let's start with a simplified example
 
 ```ruby
-def addition(number_1, number_1)
-    number_1 + number_2
+def greeting(my_name, my_greeting)
+  puts "#{my_greeting}! I'm #{my_name}"
 end
-puts addition(2, 3)
+
+greeting("Karlie", "Heyyyyyy")
 ```
-***Your turn to practice with a lab!***
-https://GitHub.com/learn-co-curriculum/hs-ruby-2-parrot-lab
-+ We can also set default values for our arguments like this:
+
+So two arguments. What if we wanted to say that by default, `my_greeting` should just have a value if we don't send one explicitly (what's that word mean?)
+
+Want to try googling it? **Give students a chance to google ruby default arguments** 5 Minutes. Have someone explain the default argument.
+
+If you want an argument to have a default value, you just assign the default when you declare the argument. 
 
 ```ruby
-    def say_name(name="Programmer") 
-        "Hello #{name}!"
-    end
-```
-+ What do you think happens when I call this method with no arguments? Show the class.
-+ Practice with a mini-lab 
-    + https://GitHub.com/learn-co-curriculum/hs-ruby-2-meal-choice-lab
-Why do we have to feed arguments into a method anyway? Why can't we do this:
-+ What if instead of feeding in an argument for name we just defined name at the top of the file. Like this:
-
-```ruby
-    name = "Joe"
-    def say_hello
-        "hello #{name}"
-    end
-    puts say_hello
-```
-+ Let's try running this file. 
-+ What does this error message mean? `undefined local variable or method 'name'`
-+ The method doesn't recognize the variable name. That is because a method creates its own world. 
-+ ***Draw circles on the board. The big circle is the program. The small circle is the method. The method is only aware of what is in the small circle.***
-+ In this example the name variable lives outside of this world, so say_hello doesn't even know it exists. Let's try defining name inside of the method. This works!
-
-```ruby
-name = "Joe"
-def say_hello
-    name = "Bob"
-    "hello #{name}"
+def greeting(my_name, my_greeting = "Hi")
+  puts "#{my_greeting}! I'm #{my_name}"
 end
+
+greeting("Karlie") #> Hi! I'm Karlie
+greeting("Cardi B", "Heyyyyyy") #> "Heyyyyyy! I'm Cardi B"
 ```
-+ Which name gets printed out though? Bob.
-+ Now one more test. Let's trying adding puts "hello #{name}" outside of our method at the bottom of the file. What do you think will be printed to the screen?
 
-```ruby
-name = "Joe"
-def say_hello
-    name = "Bob"
-    "hello #{name}"
-end
-puts say_hello
-puts "hello #{name}"
-```
-+ Why does it print both "Hello Bob" and "Hello Joe"? Why in that order?
-+ What we just talked about is called scope. It is not so important for simple labs like the ones we are doing now, but it will become very important later. Don't forget about scope! 
-+ For now, just remember that you'll need to feed information into a method with an argument. Otherwise your method will not know what you are talking about.
+We tend to keep our arguments with defaults last, anyone want to guess why?
 
+**Default Argument Labs** 15 minutes
 
-## Conclusion 
-+ Now you know: 
-    + how to write your own methods
-    + where to look for pre-written ruby methods (in ruby   documentation)
-    + the return values of methods
-    + how to write and call methods with arguments
-    + what scope is
-
-
-## Hints and Hurdles 
-+ For method arguments: Ask the class "What if I told you to dye my hair, is that enough instructions for you to do anything?" - Usually students say no, they need to know what color. The color, "blue" is an argument, its the additional piece of information that could change, but is needed to complete the task
+[Say Hello](https://github.com/learn-co-curriculum/kwk-l1-say-hello-methods-ruby)
+[Meal Choice](https://github.com/learn-co-curriculum/kwk-l1-ruby-2-meal-choice-lab)
+[Mother’s Day](https://github.com/learn-co-curriculum/kwk-l1-mothers-day-methods)
