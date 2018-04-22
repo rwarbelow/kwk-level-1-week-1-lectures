@@ -159,13 +159,13 @@ From `irb` demo:
 
 + You can even chain methods together: `"hello world".upcase.reverse.capitalize`
 
-### String Labs
+### String Labs - 15-20 minutes
 
 Have students work on [String Interactive Practice](https://github.com/learn-co-curriculum/kwk-l1-strings-mini-lab) (This must be loaded in Learn) 
 
-Students should also work on [Silly Strings](https://github.com/learn-co-curriculum/kwk-l1-silly_string/)
+Students can also begin work on [Silly Strings](https://github.com/learn-co-curriculum/kwk-l1-silly_string/)
 
-Review Silly Strings with students.
+Review String Interactive Practice with students, solve the start of Silly Strings so that during lab time they have already started.
 
 ## Math and Ruby
 
@@ -238,7 +238,7 @@ ERRORS AREN'T BAD!!!!! they're breadcrumbs to your problem. Ruby is telling us e
 
 ***students do it too***
 
-### Variables Lab
+### Variables Lab - 10 minutes
 
 Have them do [Variable Interactive Practice](https://github.com/learn-co-curriculum/kwk-l1-variables-mini-lab) in Learn.
 
@@ -291,6 +291,5 @@ Web applications follow and input-output pattern. You input a comment to the fun
 ## Labs to Work On
 
 + [Messy Macarena](https://github.com/learn-co-curriculum/kwk-l1-messy_macarena_lab_ruby)
-+ [Phone Number Formatter](https://github.com/learn-co-curriculum/kwk-l1-phone-number-formatter)
 + [User Input Mini Lab](https://www.github.com/learn-co-curriculum/kwk-l1-user-input-mini-lab)
 + [Met Gala Invitation](https://www.github.com/learn-co-curriculum/kwk-l1-invitation-maker-lab)
