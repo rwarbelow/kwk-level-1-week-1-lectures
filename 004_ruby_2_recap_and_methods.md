@@ -11,7 +11,7 @@ Students get a review of the core concepts learned in the earlier lesson, puts, 
 
 ## Recap
 
-_Feel free to use [Ruby Recap and Methods](https://docs.google.com/presentation/d/1zOL_KZKVK-jW8Gyh5L-XPgHw8XXkZytKWb7W4SqDKP0/edit#slide=id.g38c2de6ae8_0_122) Deck
+_Feel free to use [Ruby Recap and Methods Deck](https://docs.google.com/presentation/d/1zOL_KZKVK-jW8Gyh5L-XPgHw8XXkZytKWb7W4SqDKP0/edit#slide=id.g38c2de6ae8_0_122)
 
 ### Programs are Just Files
 
