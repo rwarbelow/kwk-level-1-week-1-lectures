@@ -93,7 +93,9 @@ We have two important pieces to keep in mind - data and key words. All programs 
 
 What is data? (ask class for their thoughts). The internet is entirely made up of data and websites give context for that data. Fandango is a website for movie information, but without knowing what Fandango is and does, it's just a bunch of random addresses, names, and times on the screen. That's data and Fandango gives context for it.
 
-What is a string? Strings are a piece of data denoted by double quotes. A string can hold any type of character, letters, numbers, spaces, and all special characters like !!!&&&. It's used to hold information in a sentence-like format. We have to put the double quotes for the computer to treat the sentence as data. As people, we look at words written and automatically know that they are words to be read and contain information. Computers are stupid and have to be told explicitly what they are. Any time you type a new Facebook status, or comment on a friend's Instragram, the backend code of those applications reads those posts as Strings.***(Pause for students to explain to a partner what a string is)***
+What is a string? Strings are a piece of data denoted by double quotes. A string can hold any type of character, letters, numbers, spaces, and all special characters like !!!&&&. It's used to hold information in a sentence-like format. We have to put the double quotes for the computer to treat the sentence as data. As people, we look at words written and automatically know that they are words to be read and contain information. Computers are stupid and have to be told explicitly what they are. Any time you type a new Facebook status, or comment on a friend's Instragram, the backend code of those applications reads those posts as Strings.
+
+***(Pause for students to explain to a partner what a string is)***
 
 And `puts`? `puts` is an action built into Ruby that tells the computer to print out your piece of data to the screen. It's telling the computer, show this information to my user. It stands for output string.
 
@@ -288,7 +290,7 @@ Web applications follow and input-output pattern. You input a comment to the fun
 
 ## Labs to Work On
 
-[Messy Macarena](https://github.com/learn-co-curriculum/kwk-l1-messy_macarena_lab_ruby)
-[Phone Number Formatter](https://github.com/learn-co-curriculum/kwk-l1-phone-number-formatter)
-[User Input Mini Lab](https://www.github.com/learn-co-curriculum/kwk-l1-user-input-mini-lab)
-[Met Gala Invitation](https://www.github.com/learn-co-curriculum/kwk-l1-invitation-maker-lab)
++ [Messy Macarena](https://github.com/learn-co-curriculum/kwk-l1-messy_macarena_lab_ruby)
++ [Phone Number Formatter](https://github.com/learn-co-curriculum/kwk-l1-phone-number-formatter)
++ [User Input Mini Lab](https://www.github.com/learn-co-curriculum/kwk-l1-user-input-mini-lab)
++ [Met Gala Invitation](https://www.github.com/learn-co-curriculum/kwk-l1-invitation-maker-lab)
