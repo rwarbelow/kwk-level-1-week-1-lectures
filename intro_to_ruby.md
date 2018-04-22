@@ -286,7 +286,7 @@ Web applications follow and input-output pattern. You input a comment to the fun
 
 ## Hints and Hurdles
 
-+ `gets` takes in all information as a string and with the newline-character at the end of it. add `.strip` to get rid of the newline.
+`gets` takes in all information as a string and with the newline-character at the end of it. add `.strip` to get rid of the newline.
 
 ## Labs to Work On
 
