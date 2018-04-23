@@ -35,7 +35,8 @@ First things first: the `loop` method. Loop runs the code inside of its block wi
 ```ruby
 loop do
   puts "One..."
-  puts "\tand two...\n"
+  puts "  and two..."
+  puts ""
 end
 ```
 
@@ -44,7 +45,8 @@ Try running this in irb. You will notice that your terminal locks up and endless
 ```ruby
 loop do
   puts "One..."
-  puts "\tand two...\n"
+  puts "  and two..."
+  puts ""
 end
 
 puts "I'm tired"
@@ -55,34 +57,17 @@ We never saw our dancer's say "I'm tired". This makes sense, because we never op
 
 [Two Step and Repeat](#) **THIS LAB NEEDS TO BE CREATED**
 
-We can express this behavior using a method as well!:
-
-```ruby
-def dance
-  puts "One..."
-  puts "\tand two...\n"
-  return dance
-end
-
-dance
-```
-
-Run this in irb. You will see the same behavior, but the program will error out because its keep track of all those calls to `dance`. Ask the students why we need to call `dance` on the last line, even though we didn't in the `loop` example.
-
-<div style="text-align:center">
-  <img src="http://i0.kym-cdn.com/photos/images/original/001/246/322/9b2.gif" />
-</div>
-
-Let's see how we can escape an infinite loop and avoid the nightmare Pooh has found himself in above.
+Of course, sometime's we want to do something many times, but not forever. Eventually, we may want the normal execution of our program to take back over. Let's look at some ways to introduce conditional ending of our loops next.
 
 ## `break`
 
-Ruby's `break` statement allows us to end a loop immediately. At whatever point it is encountered, the fun stops and Ruby resumes execution outside of the loop. Demonstrate this in irb:
+Ruby's `break` statement allows us to end a loop immediately. At whatever point `break` is encountered, the fun stops and Ruby resumes execution outside of the loop. Demonstrate this in irb:
 
 ```ruby
 loop do
   puts "One..."
-  puts "\tand two...\n"
+  puts "  and two..."
+  puts ""
   break
 end
 
@@ -103,7 +88,8 @@ def dance
     end
 
     puts "One..."
-    puts "\tand two...\n"
+    puts "  and two..."
+    puts ""
 
     music_playing = false
   end
@@ -114,21 +100,49 @@ end
 dance
 ```
 
-What we did above is such a commonly expressed way to manage looping (e.g. "do this forever until some condition says stop") that most languages have a specific keyword built in to do just that: the `while` loop.
+As we currently have it, our loop isn't doing much looping at all. We execute the three `puts` statements, then Ruby reads the `break` statement, and never loops again. A more practical use would be to have our loop repeat a finite number of times:
+
+```ruby
+def dance
+  moves_completed = 0
+
+  loop do
+    if moves_completed == 10
+      break
+    end
+
+    puts "One..."
+    puts "  and two..."
+    puts ""
+
+    moves_completed = moves_completed + 1
+    puts "#{moves_completed} move(s) completed!"
+    # a.k.a. moves_complete += 1
+  end
+
+  puts "Everybody freeze!"
+end
+
+dance
+```
+
+What we did in the last few examples is such a commonly expressed way to manage looping (e.g. "do this forever until some condition says stop") that most languages have a specific keyword built in to do just that: the `while` loop.
 
 ## `while` Loops
 
 Just as the name implies, the `while` keyword executes a loop 'while' some conditional evaluates to `true`. Let's rewrite the above code block without using `break`:
 
-
 ```ruby
 def dance
-  music_playing = true
+  moves_completed = 0
 
-  while music_playing do
+  while moves_completed < 10
     puts "One..."
-    puts "\tand two...\n"
-    music_playing = false
+    puts "  and two..."
+    puts ""
+
+    moves_completed = moves_completed + 1
+    puts "#{moves_completed} move(s) completed!"
   end
 
   puts "Everybody freeze!"
@@ -137,7 +151,7 @@ end
 dance
 ```
 
-Demonstrate these side by side. Query: "What's the difference? Understanding that they do the same thing, is one preferable? Why or why not?""
+Demonstrate the `while` and the `break` with conditional side by side. Query: "What's the difference? Understanding that they do the same thing, is one preferable? Why or why not?""
 
 [While Music Playing Lab](#) **THIS LAB NEEDS TO BE CREATED**
 
@@ -146,19 +160,22 @@ You will notice that, with a `while` loop, we are repeating the loop as long as 
 
 ## `until` Loops
 
-"Until some condition is met, do this thing..."
+"Until some condition is met, do this thing...". Now is a good time to ask the students to come up with what the code, using `until` should look like.
 
 ```ruby
-# Make note: our variable is no longer keeping track of whether the music is playing or not. Instead, we are keeping track of whether the music has stopped.
+# Make note: our variable is now keeping track of the beats left in the song
 def dance
-  music_stopped = false
+  beats_left_in_song = 60
 
-  until music_stopped do
+  until beats_left_in_song === 0 do
     puts "One..."
-    puts "\tand two...\n"
+    puts "  and two..."
+    puts ""
+
+    beats_left_in_song -= 1
   end
 
-  puts "I never print because the party never ends!"
+  puts "The song has no more beats we can dance to!"
 end
 
 dance
@@ -171,7 +188,8 @@ music_stopped = false
 
 loop do
   puts "One..."
-  puts "\tand two...\n"
+  puts "  and two..."
+  puts ""
   if music_stopped
     break
   end
