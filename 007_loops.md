@@ -13,7 +13,7 @@ Remember way back when we learned about methods? We said that there's an issue a
 
 ```ruby
 def two_step
-  puts "Step to the left."
+  puts "Step to the left..."
   puts "Step to the right."
 end
 
@@ -22,7 +22,7 @@ two_step
 two_step
 ```
 
-How would we tell the two_step to just keep on going, to never stop, just keep on repeating? _Do the dance, it never stops_
+How would we tell the `two_step` to just keep on going, to never stop, just keep on repeating? _Do the dance, it never stops_
 
 You'd really want to keep on dancing as long as the music is playing (and if you're me, even after).
 
