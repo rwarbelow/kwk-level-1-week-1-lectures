@@ -1,7 +1,7 @@
 # Ruby Methods - Full Lecture
 
 ## Objective
-*Students will be able to create and use methods with arguments.
++ Students will be able to create and use methods with arguments.
 
 ## SWBATS
 
