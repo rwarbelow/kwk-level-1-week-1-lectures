@@ -8,18 +8,18 @@
 
 + CLI ‐ Understand and explain what terminal is and why we use it
 + CLI ‐ Navigate through directories using relative and absolute paths
-+ CLI ‐ use the `cd` command to move up and down directories
++ CLI ‐ Use the `cd` command to move up and down directories
 + CLI ‐ Use the `ls` keyword to list items in a directory
 + CLI ‐ Remove a file and a directory by using `rm` and `rm ‐rf` keywords
-+ CLI ‐ move files and directories using the `mv` command
++ CLI ‐ Move files and directories using the `mv` command
 
 ## Motivation
 
-Back in the day ('80s') computers only had a terminal to control them. (Show a picture). No mouse, no icons, no desktop. Just a blinking green cursor. You had to control your entire computer like that.
+Back in the day ('80s) computers only had a terminal to control them. (Show a picture). No mouse, no icons, no desktop. Just a blinking green cursor. You had to control your entire computer like that.
 
-Later on, GUIs were created to make computers more accessible.
+Later on, Graphical User Interfaces (GUIs) were created to make computers more accessible.
 
-Developers continue to use the terminal instead of the GUI because it makes you faster, more in control, you understand what's happening under the hood. If you're a developer, time is money (and your time is expensive).
+Developers continue to use the terminal instead of the GUI because it makes you faster, more in control, and you understand what's happening under the hood. If you're a developer, time is money (and your time is expensive).
 
 Understanding the terminal is like being Neo from the matrix- you can see the secret hidden files on your computer. This is industry practice.
 
@@ -113,11 +113,11 @@ touch statue_of_library.txt
 mv statue_of_library.txt statue_of_liberty.txt
 ```
 
-Practice moving up the tree using .. (`cd ..` moves backwards)
+Practice moving up the tree using .. (`cd ..` moves up a level into the parent directory)
 
 ### Absolute vs Relative Paths
 
-Directories only know what's directly inside of them. If I'm in Paris, the only things I know are the sights in Paris, I don't know that I'm in France, and I don't know that Rome even exists. You need to move up the tree with .. to access items outside of the directory you're in. 
+Directories only know what's directly inside of them. If I'm in Paris, the only things I know are the sights in Paris, I don't know that I'm in France, and I don't know that Rome even exists. You need to move up the tree with `cd ..` to access items outside of the directory you're in. 
 
 Write out the absolute path of different files and directories. An Absolute path is a path that starts from the root, `/`. An absolute path to the pyramids file would be: `/home/aviflombaum/development/trip/egypt/pyramids.txt`.
 
