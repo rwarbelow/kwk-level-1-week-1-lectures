@@ -6,7 +6,7 @@
 
 ## SWABTS
 
-+ CLI ‐ Understand and explain what terminal is and why we use it.
++ CLI ‐ Understand and explain what terminal is and why we use it
 + CLI ‐ Navigate through directories using relative and absolute paths
 + CLI ‐ use the `cd` command to move up and down directories
 + CLI ‐ Use the `ls` keyword to list items in a directory
