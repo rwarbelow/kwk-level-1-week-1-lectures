@@ -26,7 +26,7 @@ Let's take a look at how we might create, and begin working with, a hash. Going 
 
 ## Creating a Hash
 
-Our best client, the Amazon Client Experience Team, needs our services again. It's the mid-1990's, and Amazon's business is a-boomin'. You have joined the team full time and they need to improve their web interface. Now, they want to make sure prices are associated with the items name. You have a solution which implements a hash:
+Our best client, the Amazon Client Experience Team, needs our services again. It's the mid-1990's, and Amazon's business is a-boomin'. You have joined the team full time and they need to improve their web interface. Now, they want to make sure prices are associated with the item's name. You have a solution which implements a hash:
 
 ```Ruby
 items = {} # this creates a new empty hash
@@ -59,7 +59,7 @@ puts items
 
 ## Growing a Hash
 
-**NOTE:** now is a great time to tie back in what we recently learned with the `array.each` method and do a live code-along with the students. Let's imagine the Amazon team needs to consolidate data that is currently split up into one hash. Propose you have two arrays, one filled with prices and filled with item names. Assuming that the prices and item names line up by index, how would you grow the hash associating **keys** of item names with **values** of prices? Following is a potential solution using `.each`.:
+**NOTE:** now is a great time to tie back in what we recently learned with the `array.each` method and do a live code-along with the students. Let's imagine the Amazon team needs to consolidate data that is currently split up into one hash. Propose you have two arrays, one filled with prices and filled with item names. Assuming that the prices and item names line up by index, how would you grow the hash associating **keys** of item names with **values** of prices? Following is a potential solution using `.each`:
 
 ```Ruby
 prices = [20.0, 15.99, 2.50]
