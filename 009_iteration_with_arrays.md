@@ -10,6 +10,7 @@ Students will learn about the array `.each` method as well as other iterators th
 + ARRAYS - use `.each` to perform common array operations:
   - create a new array by modifying elements from the previous
   - filter an array with by applying a conditional to its elements
+  - reduce an array by summing all of its elements
 
 ## Improving the Access by Index Method
 
