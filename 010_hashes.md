@@ -16,7 +16,7 @@ Students will learn about Ruby hashes.
 
 So far, we have explored how arrays enable us as programmers to store data and perform complex operations on groups of data. Along with arrays, **hashes** are another core data structure in programming.
 
-A `hash` is easiest described as working the same as a dictionary. Imagine looking up a definition for a word in a dictionary. When you look up a definition, you aren't looking up the _word_ itself, you already know it (i.e. the word is 'flabbergast', and you can easily find out which page its on). Instead, it is the definition of the word, which you don't know, that you really want:
+A `hash` is easiest described as working the same as a dictionary. Imagine looking up a definition for a word in a dictionary. When you look up a definition, you aren't looking up the _word_ itself, you already know it (i.e. the word is 'flabbergast', and you can easily find out which page it's on). Instead, it is the definition of the word, which you don't know, that you really want:
   - You find the page with the word itself
   - You then look at the definition for the word itself, and have your answer
 
@@ -26,7 +26,7 @@ Let's take a look at how we might create, and begin working with, a hash. Going 
 
 ## Creating a Hash
 
-Our best client, the Amazon Client Experience Team, needs our services again. It's the mid 1990's, and Amazon's business is a boomin'. You have joined the team full time and they need to improve their web interface. Now, they want to make sure prices are associated with the items name. You have a solution which implements a hash:
+Our best client, the Amazon Client Experience Team, needs our services again. It's the mid-1990's, and Amazon's business is a-boomin'. You have joined the team full time and they need to improve their web interface. Now, they want to make sure prices are associated with the items name. You have a solution which implements a hash:
 
 ```Ruby
 items = {} # this creates a new empty hash
@@ -46,7 +46,7 @@ puts items["Dazzling Coat"]
 > 15.0
 ```
 
-To re-iterate, we are providing the **hash** `items` with a **key** of `"Dazzling Coat"`, and it is returning the **value** of `15.0`, (which we print with `puts`). We can also pass variables that are associated with values into either the key or the value when adding items:
+To reiterate, we are providing the **hash** `items` with a **key** of `"Dazzling Coat"`, and it is returning the **value** of `15.0`, (which we print with `puts`). We can also pass variables that are associated with values into either the key or the value when adding items:
 
 ```ruby
 new_item = "Aubergine Gloves"
@@ -84,10 +84,10 @@ In programming, iteration (or going through a collection of elements one by one)
 
 Our Amazon Team has approached us with another deliverable: "Excellent work consolidating the user's item names and prices into a single hash. Going forward, we need to make sure we can still send our different teams the information they require":
 
-  - The marketing team wants list of the items a user purchases. They don't care about the prices
+  - The marketing team wants a list of the items a user purchases. They don't care about the prices
   - The accounting team needs a record of the total purchase amounts, and they don't care about the names of the items
 
-We have a straight forward solution that will satisfy everyone:
+We have a straightforward solution that will satisfy everyone:
 
 ```Ruby
 items = {
