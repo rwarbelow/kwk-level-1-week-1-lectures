@@ -87,4 +87,26 @@ Woah! There is an important change that took place. After removing the last elem
 
 **LAB ON NESTED ARRAYS**
 
-Now that we have experience with nested arrays, let's move on to nested hashes and see how their behavior is very similar. 
+Now that we have experience with nested arrays, let's move on to nested hashes and see how their behavior is very similar
+
+## Nested Hashes
+
+Hashes are natural fits for storing data than can be associated with a single unique value (a.k.a. the `key`). Let's assume we are the programmer in charge of the U.S. top secret spy databse. As we know, spies are complex, and thus need a complex data structure to represent them:
+
+```Ruby
+spy = {
+  "real_name" => "Beatrice Kiddo",
+  "alias" => "Ada Lovelace",
+  "Languages" => {
+    "French" => "Un peu",
+    "English" => "Fluent",
+    "German" => "Ein bissle"
+  }
+}
+```
+
+
+
+
+
+# placeholder
