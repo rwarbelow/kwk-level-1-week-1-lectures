@@ -129,4 +129,4 @@ puts total
 
 **MINI LAB: using .each to perform common array manipulations**
 
-**Note:** Sticking with the core iterator `.each`, we have built out some of the most commonly abstracted iteration methods: `map/collect`, `find_all/select`, `reduce/inject`. Students may call these by name if they are familiar with them, so be prepared to accurately associate each with its implementation above if needed.
+**Note:** Sticking with the core iterator `.each`, we have built out some of the most commonly abstracted iteration methods: `map/collect`, `find_all/select`, `reduce/inject/sum`. Students may call these by name if they are familiar with them, so be prepared to accurately associate each with its implementation above if needed.
