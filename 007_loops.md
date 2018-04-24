@@ -59,7 +59,7 @@ We never saw our dancer's say "I'm tired". This makes sense, because we never op
 
 [Two Step and Repeat](#) **THIS LAB NEEDS TO BE CREATED**
 
-Of course, sometime's we want to do something many times, but not forever. Eventually, we may want the normal execution of our program to take back over. Let's look at some ways to introduce conditional ending of our loops next.
+Of course, sometimes we want to do something many times, but not forever. Eventually, we may want the normal execution of our program to take back over. Let's look at some ways to introduce conditional ending of our loops next.
 
 ## `break`
 
@@ -155,7 +155,7 @@ end
 dance
 ```
 
-Demonstrate the `while` and the `break` with conditional side by side. Query: "What's the difference? Understanding that they do the same thing, is one preferable? Why or why not?""
+Demonstrate the `while` and the `break` with conditional side by side. Query: "What's the difference? Understanding that they do the same thing, is one preferable? Why or why not?
 
 [While Music Playing Lab](#) **THIS LAB NEEDS TO BE CREATED**
 
@@ -164,7 +164,7 @@ You will notice that, with a `while` loop, we are repeating the loop as long as 
 
 ## `until` Loops
 
-"Until some condition is met, do this thing...". Now is a good time to ask the students to come up with what the code, using `until` should look like.
+"Until some condition is met, do this thing...". Now is a good time to ask the students to come up with what the code using `until` should look like.
 
 ```ruby
 # Make note: our variable is now keeping track of the beats left in the song
@@ -185,7 +185,7 @@ end
 dance
 ```
 
-Let's tie this back together to our `break` example. You will notice that even with the multiple examples and new keywords above, we have **done nothing new** since our initial use of `break`. We are still asking a simple question: "is some condition true/false? if so, continue/stop." To express the `until` example with break:
+Let's tie this back together to our `break` example. You will notice that even with the multiple examples and new keywords above, we have **done nothing new** since our initial use of `break`. We are still asking a simple question: "is some condition true/false? if so, continue/stop." To express the `until` example with `break`:
 
 ```ruby
 music_stopped = false
