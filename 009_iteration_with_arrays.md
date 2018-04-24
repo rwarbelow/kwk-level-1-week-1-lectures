@@ -10,6 +10,7 @@ Students will learn about the array `.each` method as well as other iterators th
 + ARRAYS - use `.each` to perform common array operations:
   - create a new array by modifying elements from the previous
   - filter an array with by applying a conditional to its elements
+  - reduce an array by summing its elements
 
 ## Improving the Access by Index Method
 
@@ -128,4 +129,4 @@ puts total
 
 **MINI LAB: using .each to perform common array manipulations**
 
-**Note:** Sticking with the core iterator `.each`, we have built out some of the most commonly abstracted iteration methods: `map/collect`, `find_all/select`, `reduce/inject`. Students may call these by name if they are familiar with them, so be prepared to accurately associate each with its implementation above if needed.
+**Note:** Sticking with the core iterator `.each`, we have built out some of the most commonly abstracted iteration methods: `map/collect`, `find_all/select`, `reduce/inject/sum`. Students may call these by name if they are familiar with them, so be prepared to accurately associate each with its implementation above if needed.
