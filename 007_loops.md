@@ -102,7 +102,7 @@ end
 dance
 ```
 
-As we currently have it, our loop isn't doing much looping at all. We execute the three `puts` statements, then Ruby reads the `break` statement, and never loops again. A more practical use would be to have our loop repeat a finite number of times:
+As we currently have it, our loop isn't doing much looping at all. We execute the three `puts` statements, then Ruby reads the `break` statement, and never loops again. A more practical use would be to have our loop repeat a finite number of times. We can do this using a counter, which keeps track of how many times our loop has run:
 
 ```ruby
 def dance
@@ -127,6 +127,8 @@ end
 
 dance
 ```
+
+Notice that, in the loop block, we made sure to increment the counter every time the loop runs. At the beginning of the loop, we check the value of that counter and `break` if it has already completed the appropriate amount of times.
 
 What we did in the last few examples is such a commonly expressed way to manage looping (e.g. "do this forever until some condition says stop") that most languages have a specific keyword built in to do just that: the `while` loop.
 
