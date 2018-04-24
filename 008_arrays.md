@@ -2,7 +2,7 @@
 
 ## Objectives
 
-Students will learn about creating and manipulating arrays
+Students will learn about creating and manipulating arrays.
 
 ## SWBATS
 
@@ -24,7 +24,7 @@ student_three = 'Kate Bush'
 # etc...
 ```
 
-Pretty soon, our system would get out of hand and we would be creating unnecessary work for ourselves by putting the burden on _us_ to remember all of our variables floating around in our program.
+Pretty soon, our system would get out of hand and we would be creating unnecessary work for ourselves by putting the burden on _us_ to remember all of our variables floating around in our program. What we really want is some single variable that holds a collection of our student names.
 
 Lucky for us, arrays do just this in the case of our student names collection:
 
