@@ -46,7 +46,7 @@ Just like other types of data in Ruby, (such as a "string", or integer), arrays 
 student_names = []
 ```
 
-This instantiates an empty array that is ready to do all the things an array can, i.e.: have elements added, removed, accessed, looped over, etc. If we wanted to make an array with data in it, we could do the following:
+This creates an empty array just like `""` created an empty string. Our `student_names` array is now ready to do all the things an array can, i.e.: have elements added, removed, accessed, looped over, etc. If we wanted to make an array with data in it, we could do the following:
 
 ```Ruby
 student_names = ['Cardi B', 'Beyonce', 'Adele']
@@ -92,7 +92,12 @@ puts student_names
 > Rihanna
 ```
 
-As we see above, the array `push` method takes in an argument (or many via: `push('Beatrice', 'Badger', 'Biff')` and appends them to the end of the array.
+As we see above, the array `push` method takes in an argument (or many via: `push('Beatrice', 'Badger', 'Biff')` and appends them to the end of the array. We can also use the shorthand syntax for `push`, but 'shoveling' into the array:
+
+```Ruby
+student_names << "Lady Gaga"
+
+```
 
 #### Editing Elements
 
@@ -103,12 +108,12 @@ In addition to adding elements, we can also edit them. Remember how we could `pu
 If we can retrieve these elements from the array, it follows that we can also edit them!
 
 ```Ruby
-student_names[1] = "Wendy Rene"
+student_names[1] = "Katy Perry"
 ```
 
-Just like we described with `puts` taking the result of `array[index]`, we are assigning the value of "Wendy Rene" to the index.
+Just like we described with `puts` taking the result of `array[index]`, we are assigning the value of "Katy Perry" to the index.
 
-**Query**: what will the array `puts` now?
+**Query**: what will the array `puts` after we execute the above code snippet?
 
 **SHOULD HAVE A SIMPLE LAB/CODEALONG ABOUT EDITING/PUSHING DATA TO AN ARRAY, LIKE A SPOT CORRECTION IN COLORS OF THE RAINBOW**
 
