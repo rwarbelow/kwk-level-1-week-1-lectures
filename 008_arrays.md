@@ -24,9 +24,9 @@ student_three = 'Adele'
 # etc...
 ```
 
-**Note:** Feel free to swap these names out with whoever you like or your students will associate with. Make sure to do a "find and replace all" if you are changing them!
+**Note:** Feel free to swap these names out with whoever you like or other people that your students will associate with. Make sure to do a "find and replace all" if you are changing them!
 
-This solution is sub-optimal. Imagine that we had a new student in our class and needed to add them to our program. As this currently stand, we would have to create a new variable and update the source code itself!: `new_student = Ariana Grande`.
+This solution is sub-optimal. Imagine that we had a new student in our class and needed to add them to our program. As this currently stands, we would have to create a new variable and update the source code itself: `new_student = Ariana Grande`.
 
 Pretty soon, our system would get out of hand and we would be creating unnecessary work for ourselves by putting the burden on _us_ to remember all of our variables floating around in our program. What we really want is some single variable that holds a collection of our student names.
 
@@ -46,7 +46,7 @@ Just like other types of data in Ruby, (such as a "string", or integer), arrays 
 student_names = []
 ```
 
-This creates an empty array just like `""` created an empty string. Our `student_names` array is now ready to do all the things an array can, i.e.: have elements added, removed, accessed, looped over, etc. If we wanted to make an array with data in it, we could do the following:
+This creates an empty array just like `""` created an empty string. Our `student_names` array is now ready to do all the things an array can, i.e.: have elements added, removed, accessed, looped over, etc. If we wanted to make an array with data in it (such as several strings), we could do the following:
 
 ```Ruby
 student_names = ['Cardi B', 'Beyonce', 'Adele']
@@ -59,7 +59,7 @@ puts student_names
 > Cardi B
 > Beyonce
 > Adele
-> => nil # if you are wondering why we see the nil, its because that's the return value of the method `puts` itself. IRB prints return values to the terminal by default
+> => nil # if you are wondering why we see the nil, its because that's the return value of the method `puts` itself. IRB prints return values to the terminal by default.
 ```
 
 Excellent! We are off to a running start with arrays. What if we wanted to only access a single element of an array, though? For example, let's say we only wanted to print the first student in the array. Well, arrays have the ability to do just that:
@@ -92,7 +92,7 @@ puts student_names
 > Rihanna
 ```
 
-As we see above, the array `push` method takes in an argument (or many via: `push('Beatrice', 'Badger', 'Biff')` and appends them to the end of the array. We can also use the shorthand syntax for `push`, but 'shoveling' into the array:
+As we see above, the array `push` method takes in an argument (or many via: `push('Beatrice', 'Badger', 'Biff')` and appends them to the end of the array. We can also use the shorthand syntax for `push`, by 'shoveling' into the array:
 
 ```Ruby
 student_names << "Lady Gaga"
@@ -128,9 +128,9 @@ puts student_names.size
 > 5
 ```
 
-The 'size' method has a use well beyond just telling us how many elements are in an array. It can also be used as a "stop here!" value when 'looping' or 'iterating' over the elements in the array. We could go through the array, index by index, until we get to an index that is equal to the `size` of the array.
+The `size` method has a use well beyond just telling us how many elements are in an array. It can also be used as a "stop here!" value when 'looping' or 'iterating' over the elements in the array. We could go through the array, index by index, until we get to an index that is equal to the `size` of the array.
 
-Remember: indexes start at 0 so _an array won't have an index the same value as its `.size`!_).
+Remember: indexes start at 0 so _an array won't have an index the same value as its `.size`!_
 
 Consider the following:
 
@@ -161,6 +161,10 @@ Here, we see the beginnings of how we can meaningfully use all of the elements i
 Going forward, we will look at even more convenient ways to do this common pattern of doing something with every element of an array. 
 
 https://github.com/learn-co-curriculum/kwk-pattern-lab
+
 https://github.com/learn-co-curriculum/kwk-l1-array-iteration-mini-lab
+
 https://github.com/learn-co-curriculum/kwk-l1-elective-arrays-lab
+
 https://github.com/learn-co-curriculum/kwk-youtube-arrays
+
