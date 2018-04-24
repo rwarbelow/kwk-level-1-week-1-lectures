@@ -9,7 +9,7 @@ Students will learn about the array `.each` method as well as other iterators th
 + ARRAYS - use `.each` for iteration
 + ARRAYS - use `.each` to perform common array operations:
   - create a new array by modifying elements from the previous
-  - filter an array with by applying a conditional to its elements
+  - filter an array by applying a conditional to its elements
   - reduce an array by summing all of its elements
 
 ## Improving the Access by Index Method
@@ -24,11 +24,11 @@ while idx < arr.length
 end
 ```
 
-What we are doing above, (iterating over every element, one after the other), is such a common operation that most modern languages have incorporated a built in away of doing just that! Ruby arrays provide us with the `.each` method which allows us to run some code for every element _and_ it abstracts the unnecessary repetitive use of an index counter to the background. The real advantage here is that we can express ourselves quicker while writing less 'boiler plate' code.
+What we are doing above, (iterating over every element, one after the other), is such a common operation that most modern languages have incorporated a built in way of doing just that! Ruby arrays provide us with the `.each` method which allows us to run some code for every element _and_ it abstracts the unnecessary repetitive use of an index counter to the background. The real advantage here is that we can express ourselves quicker while writing less 'boilerplate' code.
 
 ## `array.each`
 
-As an example, let's imagine we are the lead programmer in charge of adding features to the Amazon 'cart'. One of the variables we have access to is an array of prices that gets `.push(new_item_price)`, performed on it whenever a user selects a new item. Our array could look like the following:
+As an example, let's imagine we are the lead programmer in charge of adding features to the Amazon 'cart'. One of the variables we have access to is an array of prices that gets `.push(new_item_price)` performed on it whenever a user selects a new item. Our array could look like the following:
 
 ```Ruby
 cart_item_prices = [12.43, 19.99, 3.49, 75.00]
@@ -65,11 +65,11 @@ That variable's name could be whatever we want. We name it when we create the `.
 
 **MINI LAB ON `.each` - log out all the items**
 
-Now that we have the powerful `.each` method under our belts, let's jump right in to doing more advanced operations with our array!
+Now that we have the powerful `.each` method under our belts, let's jump right into doing more advanced operations with our array!
 
 ## Altering all values
 
-Our Amazon contact has reached out again and, now that they are no longer selling items exclusively in Delaware, made it clear they need to apply a sales tax to every item. The have requested the following: "Instead of just the base price of the item, we want a new array of the prices with tax included."
+Our Amazon contact has reached out again and, now that they are no longer selling items exclusively in Delaware, made it clear they need to apply a sales tax to every item. They have requested the following: "Instead of just the base price of the item, we want a new array of the prices with tax included."
 
 Confidently, we begin to ideate a solution...:
 
@@ -86,7 +86,7 @@ end
 
 ## Filtering an array
 
-Another common task we find ourselves performing on arrays is filtering, that is, going through an array and collecting only those values that meet a certain criteria. To stick with our cart example, let's imagine our contact wants us display only the 'big ticket' prices:
+Another common task we find ourselves performing on arrays is filtering, that is, going through an array and collecting only those values that meet a certain criteria. To stick with our cart example, let's imagine our contact wants us to display only the 'big ticket' prices:
 
 "Alright, the team loves your work. Next, we need some way to display only items that are over $15 dollars. We are running an exclusive offer where all items under $15 are free!"
 
