@@ -30,9 +30,9 @@ Lucky for us, arrays do just this in the case of our student names collection:
 
 ## Arrays
 
-If we want to hold an **arbitrary amount of something** arrays are just what we want to use. Put simply, an array is a **collection of data** stored all in one place. Arrays are perhaps the most used data structure (which is a fancy term for a 'specific way of storing and accessing data').
+If we want to hold an **arbitrary amount of something** arrays are just what we want to use. Put simply, an array is a **collection of data** stored all in one place. Arrays are perhaps the most used data structure (which is a fancy term for a 'specific way of storing and accessing data') by programmers.
 
-Let's look at how an array trivializes our initial problem of having too many free floating variables assigned to student names.s
+Let's look at how an array trivializes our initial problem of having too many free floating variables assigned to student names.
 
 #### Creating an array
 
@@ -67,7 +67,7 @@ puts student_names[0]
 > Nancy Sinatra
 ```
 
-This is called **accessing by index**, which provides us a way to get a specific element out of an array. If we wanted to get the second element in the array, we would use `[1]` instead of `[0]`. In programming, arrays (almost) aways start with index `0` and increment from there. Saying "the first element" and "the element at index zero" are synonymous.
+This is called **accessing by index**, which provides us a way to get a specific element out of an array. If we wanted to get the second element in the array, we would use `[1]` instead of `[0]`. In programming, arrays (almost) always start with index `0` and increment from there. Saying "the first element" and "the element at index zero" are synonymous.
 
 In addition to accessing by index, Ruby arrays have a battery of methods that make it easy to do common operations such as accessing elements, i.e.: `first` (which returns the first element/element at index 0) and `last` (which returns the last element).
 
