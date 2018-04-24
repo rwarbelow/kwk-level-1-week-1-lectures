@@ -59,7 +59,7 @@ puts student_names
 > Cardi B
 > Beyonce
 > Adele
- => nil # if you are wondering why we see the nil, its because that's the return value of the method `puts` itself. IRB prints return values to the terminal by default
+> => nil # if you are wondering why we see the nil, its because that's the return value of the method `puts` itself. IRB prints return values to the terminal by default
 ```
 
 Excellent! We are off to a running start with arrays. What if we wanted to only access a single element of an array, though? For example, let's say we only wanted to print the first student in the array. Well, arrays have the ability to do just that:
@@ -119,15 +119,48 @@ Just like we described with `puts` taking the result of `array[index]`, we are a
 
 https://github.com/learn-co-curriculum/kwk-l1-manipulating-arrays-mini-lab
 
-**EXPLAIN THE SIZE OF AN ARRAY**
+#### Getting and Using the Size
 
-**EXPLAIN USING A WHILE LOOP TO GO THROUGH ALL ELEMENTS OF AN ARRAY**
+There are many reasons we may want to determine the size, or how many elements, an array has. As one example, imagine we wanted an immediate answer on how many classmates we have. Instead of going through the array, counting one by one, we could simply call the `arr.size` method:
 
-**LABS BELOW CAN BE WRITTEN USING WHILE LOOPS WHEN ITERATION IS NEEDED**
+```Ruby
+puts student_names.size
+> 5
+```
+
+The 'size' method has a use well beyond just telling us how many elements are in an array. It can also be used as a "stop here!" value when 'looping' or 'iterating' over the elements in the array. We could go through the array, index by index, until we get to an index that is equal to the `size` of the array.
+
+Remember: indexes start at 0 so _an array won't have an index the same value as its `.size`!_).
+
+Consider the following:
+
+```Ruby
+current_idx = 0
+while current_idx < student_names.size
+  current_student = student_names[current_idx]
+  puts "#{current_idx}: #{current_student}"
+  current_idx += 1
+end
+
+> 0: Cardi B
+> 1: Kate Perry
+> 2: Adele
+> 3: Rihanna
+> 4: Lady Gaga
+```
+
+**Query:**
+  - "If we didn't have our `current_idx += 1` in the loop, what could we expect would print out?"
+  - Reinforce that we iterate until `index == arr.size - 1`: "How could we re-write this with an `until` statement?"
+
+Here, we see the beginnings of how we can meaningfully use all of the elements in an array. What we just did in the example above was:
+  - Access an element in the array
+  - Do something (in our case, print) the element with some additional information (the index)
+  - Move on to the next element, unless finished
+
+Going forward, we will look at even more convenient ways to do this common pattern of doing something with every element of an array. 
 
 https://github.com/learn-co-curriculum/kwk-pattern-lab
 https://github.com/learn-co-curriculum/kwk-l1-array-iteration-mini-lab
 https://github.com/learn-co-curriculum/kwk-l1-elective-arrays-lab
 https://github.com/learn-co-curriculum/kwk-youtube-arrays
-
-**THIS LECTURE SHOULD CREATE THE ANTICIPATION FOR ITERATION with `each`**
