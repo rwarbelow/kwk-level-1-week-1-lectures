@@ -56,10 +56,10 @@ Alright, we have our names stored in this array. Just like with a variable, we c
 
 ```ruby
 puts student_names
-> Cardi B
-> Beyonce
-> Adele
-> => nil # if you are wondering why we see the nil, its because that's the return value of the method `puts` itself. IRB prints return values to the terminal by default.
+# > Cardi B
+# > Beyonce
+# > Adele
+# > => nil # if you are wondering why we see the nil, its because that's the return value of the method `puts` itself. IRB prints return values to the terminal by default.
 ```
 
 Excellent! We are off to a running start with arrays. What if we wanted to only access a single element of an array, though? For example, let's say we only wanted to print the first student in the array. Well, arrays have the ability to do just that:
@@ -67,8 +67,8 @@ Excellent! We are off to a running start with arrays. What if we wanted to only 
 #### Accessing Elements in an Array
 
 ```ruby
-puts student_names[0]
-> Cardi B
+student_names[0]
+# => "Cardi B"
 ```
 
 This is called **accessing by index**, which provides us a way to get a specific element out of an array. If we wanted to get the second element in the array, we would use `[1]` instead of `[0]`. In programming, arrays (almost) always start with index `0` and increment from there. Saying "the first element" and "the element at index zero" are synonymous.
@@ -86,17 +86,24 @@ Accessing data in an array is only half the story, though! We also want to be ab
 ```ruby
 student_names.push("Rihanna")
 puts student_names
-> Cardi B
-> Beyonce
-> Adele
-> Rihanna
+# > Cardi B
+# > Beyonce
+# > Adele
+# > Rihanna
+#  => nil
 ```
 
 As we see above, the array `push` method takes in an argument (or many via: `push('Beatrice', 'Badger', 'Biff')` and appends them to the end of the array. We can also use the shorthand syntax for `push`, by 'shoveling' into the array:
 
 ```Ruby
 student_names << "Lady Gaga"
-
+puts student_names
+# > Cardi B
+# > Beyonce
+# > Adele
+# > Rihanna
+# > Lady Gaga
+#  => nil
 ```
 
 #### Editing Elements
@@ -124,8 +131,8 @@ https://github.com/learn-co-curriculum/kwk-l1-manipulating-arrays-mini-lab
 There are many reasons we may want to determine the size, or how many elements, an array has. As one example, imagine we wanted an immediate answer on how many classmates we have. Instead of going through the array, counting one by one, we could simply call the `arr.size` method:
 
 ```Ruby
-puts student_names.size
-> 5
+student_names.size
+# => 5
 ```
 
 The `size` method has a use well beyond just telling us how many elements are in an array. It can also be used as a "stop here!" value when 'looping' or 'iterating' over the elements in the array. We could go through the array, index by index, until we get to an index that is equal to the `size` of the array.
@@ -142,11 +149,12 @@ while current_idx < student_names.size
   current_idx += 1
 end
 
-> 0: Cardi B
-> 1: Kate Perry
-> 2: Adele
-> 3: Rihanna
-> 4: Lady Gaga
+# > 0: Cardi B
+# > 1: Kate Perry
+# > 2: Adele
+# > 3: Rihanna
+# > 4: Lady Gaga
+#  => nil
 ```
 
 **Query:**
@@ -158,7 +166,7 @@ Here, we see the beginnings of how we can meaningfully use all of the elements i
   - Do something (in our case, print) the element with some additional information (the index)
   - Move on to the next element, unless finished
 
-Going forward, we will look at even more convenient ways to do this common pattern of doing something with every element of an array. 
+Going forward, we will look at even more convenient ways to do this common pattern of doing something with every element of an array.
 
 https://github.com/learn-co-curriculum/kwk-pattern-lab
 
@@ -167,4 +175,3 @@ https://github.com/learn-co-curriculum/kwk-l1-array-iteration-mini-lab
 https://github.com/learn-co-curriculum/kwk-l1-elective-arrays-lab
 
 https://github.com/learn-co-curriculum/kwk-youtube-arrays
-
