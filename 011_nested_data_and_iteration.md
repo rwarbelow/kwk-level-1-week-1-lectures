@@ -57,7 +57,7 @@ places_visited[3].class
 
 As we see above, if we are to print out the `places_visited`, Ruby logs all of the locations including those within the nested array assigned to the variable `places_visited`. To see just how powerful this behavior is (storing arrays within arrays), let's take this a step further and make an alteration to the `new_york_boroughs` array.
 
-The year is 2023, and the union has grown to 51 states. Staten Island has seceded from the State of New York all together. Being responsible programmers, we now need to update our `new_york_boroughs` array and remove the "Staten Island" element:
+The year is 2023, and the union has grown to 51 states. Staten Island has seceded from the State of New York altogether. Being responsible programmers, we now need to update our `new_york_boroughs` array and remove the "Staten Island" element:
 
 ---
 
@@ -115,7 +115,7 @@ puts places_visited
 # => nil
 ```
 
-Woah! There is an important change that took place. After removing the last element ("Staten Island") from the `new_york_boroughs` array, it also updated in the `places_visited` array. **Emphasize the following** the array of boroughs in `places_visited` was the **exact same array** assigned to the `new_york_boroughs` array. If we change it anywhere, it is going to change everywhere it is used!
+Woah! There is an important change that took place. After removing the last element ("Staten Island") from the `new_york_boroughs` array, it also updated in the `places_visited` array. **Emphasize the following:** the array of boroughs in `places_visited` was the **exact same array** assigned to the `new_york_boroughs` array. If we change it anywhere, it is going to change everywhere it is used!
 
 #### Accessing Nested Arrays
 
@@ -142,7 +142,7 @@ If the second syntax looks a little wonky to you, that's understandable. Let's t
 
 **LAB ON NESTED ARRAYS**
 
-Now that we have experience with nested arrays, let's move on to nested hashes and see how their behavior is very similar
+Now that we have experience with nested arrays, let's move on to nested hashes and see how their behavior is very similar.
 
 ## Nested Hashes
 
@@ -164,7 +164,7 @@ spy = {
 
 In order to access the nested portion of the hash, we do the same thing that we did with nested arrays above:
 
-**NOTE:** now is a good time to give the a students a chance to pattern match what we showed them while accessing nested arrays and apply it to accessing nested hashes. Ask them how we might get the `value` of the `key`: "French"
+**NOTE:** now is a good time to give the students a chance to pattern match what we showed them while accessing nested arrays and apply it to accessing nested hashes. Ask them how we might get the `value` of the `key`: "French"
 
 ```ruby
 spy_language_skills = spy["language_skills"]
