@@ -45,8 +45,12 @@ count = 1
 
 cart_item_prices.each do |price|
   puts "Item #{count}: #{price}"
-  count += 1
+  count += 1 # even though we are using this count, its only so we can format a nice print out (i.e. 'Item 1'. Try removing it from the loop and showing that it still runs fine. We don't want students confusing it with the access by index method.)
 end
+# > Item 1: 12.43
+# > Item 2: 19.99
+# > Item 3: 3.49
+# > Item 4: 75.0
 
 # identical code using the index method:
 #
@@ -77,9 +81,10 @@ Confidently, we begin to ideate a solution...:
 tax_included = []
 
 cart_item_prices.each do |price|
-  price_with_tax = price * .17
+  price_with_tax = price * 0.17
   tax_included << price_with_tax
 end
+# => [12.43, 19.99, 3.49, 75.0]
 ```
 
 **QUERY/PROGRAM TOGETHER:** Alright, our contact was so impressed with our work, they asked if we could do one more thing. They want to have an array created with all of the modified price + tax values in it. How could we do this?
@@ -101,10 +106,8 @@ cart_item_prices.each do |price|
   end
 end
 
-puts big_ticket_prices
-
-> 19.99
-> 75.0
+big_ticket_prices
+# => [19.99, 75.0]
 ```
 
 At this point, your programming solutions to the Amazon team have been so timely, so concise, that they request your services one last time for the most important deliverable yet:
@@ -122,9 +125,8 @@ cart_item_prices.each do |price|
   total += price
 end
 
-puts total
-
-> 110.91
+total
+# => 110.91
 ```
 
 **MINI LAB: using .each to perform common array manipulations**
