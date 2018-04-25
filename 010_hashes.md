@@ -34,16 +34,18 @@ items = {} # this creates a new empty hash
 items["Dazzling Coat"] = 15.0
 
 # Now, we have a hash that looks like the following:
-# {"Dazzling Coat" => 15.0}
+items
+# => {"Dazzling Coat" => 15.0}
 # The rocket, or '=>' is saying "the key on the left is associated with the value on the right"
-puts items
+# We can also instantiate our hash using the rocket syntax, i.e.:
+# items = {"Dazzling Coat" => 15.0}
 ```
 
 We can also get values extracted directly by using the key. Using the above example, we can now programmatically answer the question: "What is the price of the 'Dazzling Coat'":
 
 ```ruby
-puts items["Dazzling Coat"]
-> 15.0
+items["Dazzling Coat"]
+# => 15.0
 ```
 
 To reiterate, we are providing the **hash** `items` with a **key** of `"Dazzling Coat"`, and it is returning the **value** of `15.0`, (which we print with `puts`). We can also pass variables that are associated with values into either the key or the value when adding items:
@@ -53,13 +55,15 @@ new_item = "Aubergine Gloves"
 item_price = 200.0
 items[new_item] = item_price
 
-puts items
-> {"Aubergine Gloves" => 200.0}
+items
+# => {"Dazzling Coat" => 15.0, "Aubergine Gloves" => 200.0}
 ```
 
 ## Growing a Hash
 
-**NOTE:** now is a great time to tie back in what we recently learned with the `array.each` method and do a live code-along with the students. Let's imagine the Amazon team needs to consolidate data that is currently split up into one hash. Propose you have two arrays, one filled with prices and filled with item names. Assuming that the prices and item names line up by index, how would you grow the hash associating **keys** of item names with **values** of prices? Following is a potential solution using `.each`:
+**NOTE:** now is a great time to tie back in what we recently learned with the `array.each` method and do a live code-along with the students.
+
+Let's imagine the Amazon team needs to consolidate data that is currently split up into one hash. Propose you have two arrays, one filled with prices and filled with item names. Assuming that the prices and item names line up by index, how would you grow the hash associating **keys** of item names with **values** of prices? Following is a potential solution using `.each`:
 
 ```Ruby
 prices = [20.0, 15.99, 2.50]
@@ -69,9 +73,11 @@ items = {}
 
 idx = 0
 item_names.each do |name|
-  items[name]
+  items[name] = prices[idx]
   idx += 1
 end
+
+# => {"Outrageous Shoes"=>20.0, "Beguiling Socks"=>15.99, "Chrome Laces"=>2.5}
 ```
 
 **MINI LAB WITH HASHES. CREATING, GROWING, ACCESSING**
@@ -99,10 +105,10 @@ items = {
 }
 
 item_names = items.keys # returns an array of all item names
-# ["Dazzling Coat", "Outrageous Shoes", "Beguiling Socks", "Chrome Laces", "Aubergine Gloves"]
+# => ["Dazzling Coat", "Outrageous Shoes", "Beguiling Socks", "Chrome Laces", "Aubergine Gloves"]
 
 prices = items.values # returns an array of all item prices
-# [15.0, 20.0, 15.99, 2.50, 200.0]
+# => [15.0, 20.0, 15.99, 2.50, 200.0]
 ```
 
 #### Iterating Over Keys and Values Simultaneously
@@ -116,20 +122,20 @@ items.each do |item_name, price|
   puts ""
 end
 
-> Item: Dazzling Coat
-> Price: 15.0
->
-> Item: Outrageous Shoes
-> Price: 20.0
->
-> Item: Beguiling Socks
-> Price: 15.99
->
-> Item: Chrome Laces
-> Price: 2.5
->
-> Item: Aubergine Gloves
-> Price: 200.0
+# Item: Dazzling Coat
+# Price: 15.0
+#
+# Item: Outrageous Shoes
+# Price: 20.0
+#
+# Item: Beguiling Socks
+# Price: 15.99
+#
+# Item: Chrome Laces
+# Price: 2.5
+#
+# Item: Aubergine Gloves
+# Price: 200.0
 ```
 
 **LAB ON HASHES**
