@@ -171,7 +171,7 @@ You will notice that, with a `while` loop, we are repeating the loop as long as 
 def dance
   beats_left_in_song = 60
 
-  until beats_left_in_song === 0 do
+  until beats_left_in_song == 0 do
     puts "One..."
     puts "  and two..."
     puts ""
