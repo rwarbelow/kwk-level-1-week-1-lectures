@@ -114,7 +114,7 @@ At this point, your programming solutions to the Amazon team have been so timely
 
 ## Reducing an array to a single value
 
-The team expresses that their users are having trouble mentally calculating the sum of their individual item prices. After all, this makes sense: our users are provided with a print out of prices, after which they would be forced to perform good ol' arithmetic to add them up.
+The team expresses that their users are having trouble mentally calculating the sum of their individual item prices. This makes sense: our users are provided with a print out of prices, after which they would be forced to perform good ol' arithmetic to add them up.
 
 "The marketing team has determined users care about seeing a 'total value' when checking out, and we are looking to provide just that. Do you have a code solution?"
 
