@@ -168,7 +168,7 @@ Here, we see the beginnings of how we can meaningfully use all of the elements i
 
 Going forward, we will look at even more convenient ways to do this common pattern of doing something with every element of an array.
 
-https://github.com/learn-co-curriculum/kwk-pattern-lab
+https://github.com/learn-co-curriculum/kwk-l1-array-pattern-lab
 
 https://github.com/learn-co-curriculum/kwk-l1-array-iteration-mini-lab
 
