@@ -1,4 +1,4 @@
-# Object Oriented Programming Part I
+# Object Oriented Programming Part I - Classes and Instances
 
 **Note:** This section features a large code-along + lab linked at the end of this lecture document. The lecture portion of this should be a high level overview, following which students should spend a large amount of time working through the provided material. The important point here is to tunnel vision in on what a class and what an instance are in a general sense
 
