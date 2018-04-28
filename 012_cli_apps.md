@@ -16,7 +16,7 @@ Students will learn about making their code interactive via the command line.
 
 The CLI, or Command Line Interface, is the 'bread and butter' way programmers interact with computers. While it may seem intimidating at first, the CLI will only become more and more convenient, easy to read, and friendly as your programming skills improve.
 
-Consider this: we may initially see the CLI as this complex alternative way to interacting with computers, (as opposed to using windows, icons, clicking on drop down menus, etc.). The reality is, all of those features are built _on top of_ the core functionality the CLI provides you with. It may seem strange now, but its likely that, down the road, you will find the graphical user interface of windows/menus/clicking as the complex alternative to the CLI!
+Consider this: we may initially see the CLI as this complex alternative way of interacting with computers, (as opposed to using windows, icons, clicking on drop-down menus, etc.). The reality is, all of those features are built _on top of_ the core functionality the CLI provides you with. It may seem strange now, but it's likely that, down the road, you will find the graphical user interface of windows/menus/clicking as the complex alternative to the CLI!
 
 ## The CLI as a Portal to our Programs
 
@@ -26,7 +26,7 @@ In addition to enabling us general access to the computer, the CLI can be used a
 
 If you have been working in IRB at all, or `puts`'ing out results from code you ran, you have already been utilizing the CLI in your Ruby code. We know that printing to the CLI is trivial:
 ```ruby
-puts "Beyoncé had one of the best videos of all time!".
+puts "Beyoncé had one of the best videos of all time!"
 ```
 
 As it turns out, retrieving information from the CLI is just as trivial:
@@ -72,14 +72,14 @@ puts "Please input your last name:"
 last_name = gets.chomp
 
 "Welcome to the #{game_number}th Hunger Games, #{first_name} #{last_name}"
-# =>  => "Welcome to the 74th Hunger Games, Katniss Everdeen"
+# => "Welcome to the 74th Hunger Games, Katniss Everdeen"
 ```
 
 ## Making an Ongoing Program
 
-Let's take this a step further. So far, we have only made one off Ruby scripts that take in data, process it, and spit out a result, then promptly die. We want to have lasting creations though! Let's make a program that runs forever and provides some type of service:
+Let's take this a step further. So far, we have only made one-off Ruby scripts that take in data, process it, and spit out a result, then promptly die. We want to have lasting creations though! Let's make a program that runs forever and provides some type of service:
 
-**QUERY:** Now is a good time to ask students to ideate a solution to the following prompt: "Make a program takes in a single integer value, and prints 'odd' or 'even' depending on which it is. The program should run forever, always waiting for input after it processes the previous". This has a few gotchas. Help them along the way by reminding them of the `loop do` construct. Expect the initial solution to not account for the input coming in as a string. Before giving them the answer, make sure to show that its not working correctly unless converted to an integer. Finally, this is a good time to introduce the modulo (`%`) operator. If they are having trouble ideating how to check whether a value is off or even, help empower them by asking if anyone can google "How to check if a number is odd/even in ruby?".
+**QUERY:** Now is a good time to ask students to ideate a solution to the following prompt: "Make a program that takes in a single integer value, and prints 'odd' or 'even' depending on which it is. The program should run forever, always waiting for input after it processes the previous". This has a few gotchas. Help them along the way by reminding them of the `loop do` construct. Expect the initial solution to not account for the input coming in as a string. Before giving them the answer, make sure to show that it's not working correctly unless converted to an integer. Finally, this is a good time to introduce the modulo (`%`) operator. If they are having trouble ideating how to check whether a value is odd or even, help empower them by asking if anyone can google "How to check if a number is odd/even in ruby?".
 
 ```ruby
 loop do
