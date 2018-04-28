@@ -1,10 +1,10 @@
 # Object Oriented Programming Part I - Classes and Instances
 
-**Note:** This section features a large code-along + lab linked at the end of this lecture document. The lecture portion of this should be a high level overview, following which students should spend a large amount of time working through the provided material. The important point here is to tunnel vision in on what a class and what an instance are in a general sense
+**Note:** This section features a large code-along + lab linked at the end of this lecture document. The lecture portion of this should be a high-level overview, following which students should spend a large amount of time working through the provided material. The important point here is to tunnel vision in on what a class and what an instance are in a general sense
 
 ## Objectives
 
-- Teach the basics of object oriented programming
+- Teach the basics of object-oriented programming
 - Understand what a class is
 - Understand what an instance is
 
@@ -16,9 +16,9 @@
 
 ## Introduction - What is Object Orientated Program
 
-Object Oriented Programming, (OOP), is a paradigm that enables programmers to organize their code in easy-to-reason and structured ways. From a zoomed out perspective, object oriented programming centers around wrapping properties, behaviors, and similar data within pre-defined structures. 
+Object Oriented Programming, (OOP), is a paradigm that enables programmers to organize their code in easy-to-reason and structured ways. From a zoomed out perspective, object-oriented programming centers around wrapping properties, behaviors, and similar data within pre-defined structures. 
 
-Adhering to OOP principles when designing applications helps programmers reason about their code and keep logical parts of the program together. Let's see how these principles can help us structure a basic program that we will use to study the periodic table of elements.
+When designing applications, adhering to OOP principles help programmers reason about their code and keep logical parts of the program together. Let's see how these principles can help us structure a basic program that we will use to study the periodic table of elements.
 
 As we work through the architecture of the program, we will see how OOP solves several problems and makes design decisions for us.
 
