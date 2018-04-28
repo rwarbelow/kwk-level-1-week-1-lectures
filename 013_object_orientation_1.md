@@ -33,7 +33,7 @@ hydrogen = {
 }
 ```
 
-While this is appropriate for a single element, it would be inconvenient to make one for every element of the periodic table! Because we know there are two properties we care about, and every single element should have them, (name, atomic number), it would be redundant to write it out 118 times for every element! In addition to being tedious, we would have no indicator of _what_ these objects represent. We would either have to remember, or look at their contents to recognize that they represent elements.
+While this is appropriate for a single element, it would be inconvenient to make one for every element of the periodic table! Because we know there are two properties we care about, and every single element should have them, (name & atomic number), it would be redundant to write it out 118 times for every element! In addition to being tedious, we would have no indicator of _what_ these objects represent. We would either have to remember, or look at their contents to recognize that they represent elements.
 
 What we really want is something like a 'template' of our element hash above, but without the specific values of name and atomic number filled in. Luckily, OOP has a solution for this specifically: a `class`. 
 
