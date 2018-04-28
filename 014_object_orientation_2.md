@@ -60,11 +60,11 @@ class Quizzer
 end
 ```
 
-While we have already been using the `Element` class as a template for `element` object instances, its important to recognize that the class itself is also an object. If our definition of an object is a bundle of code that contains attributes and behaviors, then the entire `Quizzer` class itself absolutely qualifies. 
+While we have already been using the `Element` class as a template for `element` object instances, it's important to recognize that the class itself is also an object. If our definition of an object is a bundle of code that contains attributes and behaviors, then the entire `Quizzer` class itself absolutely qualifies. 
 
 The `Quizzer` class, instead of being responsible for making `quiz` instances, owns the methods that will manage the testing _as well as_ the variable that will hold all of our element instances.
 
-Make note of the `@@` on our class variable an the `self.` before our class methods. These signify that they belong to the class itself (of which there is only one) and _not_ instances of the class.  
+Make note of the `@@` on our class variable and the `self.` before our class methods. These signify that they belong to the class itself (of which there is only one) and _not_ instances of the class.  
 
 ## Adding functionality
 
