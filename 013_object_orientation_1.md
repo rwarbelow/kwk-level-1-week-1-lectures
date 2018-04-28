@@ -98,7 +98,9 @@ lithium = Element.new("Lithium", 3)
 periodic_table.push(hydrogen, helium, lithium)
 periodic_table
 # => [
-    #<Element:0x00007fbbec1b87a8 @name="Hydrogen", @atomic_number=1>, #<Element:0x00007fbbec8a12b8 @name="Helium", @atomic_number=2>, #<Element:0x00007fbbec8968b8 @name="Lithium", @atomic_number=3>
+    #<Element:0x00007fbbec1b87a8 @name="Hydrogen", @atomic_number=1>, 
+    #<Element:0x00007fbbec8a12b8 @name="Helium", @atomic_number=2>,
+    #<Element:0x00007fbbec8968b8 @name="Lithium", @atomic_number=3>
 # ] 
 ```
 
