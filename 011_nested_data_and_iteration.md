@@ -168,8 +168,4 @@ closet["footwear"]["misc."] = ["cheetah slippers", "rain boots"]
 
 We just explored a very powerful feature: nesting data structures within others. As programmers, we are constantly using structures that enable us to more easily access and work with data. It is important to remember that accessing nested structures can be done step by step, starting at the top-most level and moving downward from there. 
 
-##### [LAB: nested arrays and hashes][mini-nested-structures-lab]
-
 ##### [LAB: arrays, nested arrays, patterns][pattern-lab] (make sure you are familiar with this lab and the solution to it. If students get caught up, provide them with the guidance they need to keep moving through the deliverables.)
-[mini-nested-structures-lab]: https://github.com/learn-co-curriculum/kwk-l1-nested-data-structures-mini-lab
-[pattern-lab]: https://github.com/learn-co-curriculum/kwk-l1-array-pattern-lab

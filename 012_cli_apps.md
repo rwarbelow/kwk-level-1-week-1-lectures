@@ -126,5 +126,3 @@ loop do
 
 end
 ```
-
-**CALCULATOR CLI LAB**
