@@ -98,6 +98,7 @@ class Quizzer
     @@periodic_table.each do |element|
       self.quiz_element(element)
     end
+    puts "Quiz Over!"
   end
   
 end
@@ -118,5 +119,6 @@ Go ahead and run this in IRB (make sure `Element` and `Quizzer` are defined!). T
   - Implement a class method, `self.quiz_random_element` which samples a random element from the class `@@periodic_table` variable and then passes it along to the quiz method we already built
   - add in class attributes to keep track of quizzing success record, i.e. an attribute keeping track of total attempts and an attribute keeping track of successful answers count
 
+**Students should now work on the labs/Learn.co material, which reinforces Ruby object oriented programming principles** 
 
 <p data-visibility='hidden'>KWK-L1 Class Variables and Class Methods</p>
