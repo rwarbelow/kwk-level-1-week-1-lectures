@@ -108,11 +108,8 @@ periodic_table
 
 ## Lab Work
 
-The following lab is going to cover concepts we introduced here in more detail. Make sure you allocate time for students to work on it. 
-[OO Introduction Lab][oo-basics-lab]
+The upcoming labs are going to cover concepts we introduced here in more detail. Make sure you allocate time for students to work on them.
 
 ## Moving Forward
 
 In the next lecture, we will build on this periodic table example and look at how classes, in addition to acting as mini instance-producing-factories, encapsulate functionality and behavior. 
-
-[oo-basics-lab]: https://github.com/learn-co-curriculum/kwk-l1-oo-basics
