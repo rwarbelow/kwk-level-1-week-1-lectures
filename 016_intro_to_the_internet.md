@@ -46,20 +46,20 @@ Let's pick apart the above url and see how it is used to construct a request. We
 
 ## What is a Client
 
-As was the case with defining what a server is, a **client** can also refer to a wide variety of use cases. In short, a **client** is a computer/program that _accesses_ information on a server. Whenever you go to a website in your browser, you are interfacing with the website's **client**. 
+As was the case with defining what a server is, a **client** can also refer to a wide variety of use cases. In short, a **client** is a computer/program that _accesses_ information on a server. Whenever you go to a website in your browser, you are interfacing with the website via a **client**. 
 
-For example, when we go to the iconic Amazon.com, the first thing Amazon's servers do is send back a whole bunch of files that our browser immediately starts displaying. In this case, the **client** is the combination of the Browser, the bundle of HTML/CSS/JavaScript from Amazon.com, and everything we interact with as users.
+For example, when we go to the iconic Amazon.com, the first thing Amazon's servers do is send back a whole bunch of files that our browser starts displaying. In this case, the **client** is the combination of the Browser, the bundle of HTML/CSS/JavaScript from Amazon.com, and everything we interact with as users.
 
 #### Client's in the Middle
 
-Consider this: a **client** also acts as a helpful middle-person between us and a website. If we were to go to Amazon.com, it is pretty clear that we don't receive all of the information Amazon has to our computer all at once. It is not practical to send the price, items remaining count, comments, etc. on every single product they offer to every single computer that visits their website (that would be a madhouse!). Instead, we are able to navigate to different areas of the website which load with new information. 
+Consider this: a **client** also acts as a helpful middle layer between us and a server. If we were to go to Amazon.com, it is pretty clear that we don't receive all of the information Amazon servers have to our computers all at once. It wouldn't be practical to send the price, items remaining count, comments, etc. on every single product they offer to every single computer that visits their website (that would be a madhouse!). Instead, we are able to navigate to different areas of the website which load with new information. 
 
 This is because the client is bridging the gap between us and the server. When we click on a new section of Amazon, the client:
 - interprets the click
 - generates an HTTP requests for its Amazon.com servers
 - sends the request off, from our computer, over the internet, to Amazon.com
-- wait for the response from the server
-- receives and handles the response from the Amazon.com servers
+- waits for the response from the server
+- receives and handles the response
 - decides where to fill in what information it received, and everything about how this information should be presented to the user (you!)
 
 That is a lot of work that the client is abstracting from us, the users. All we need to do is click on a category, (i.e. "Clothing", "Books", "Movies", etc.) and the client manages everything in between. 
@@ -78,7 +78,7 @@ When we go to youtube.com, our browser sends an HTTP request off to YouTube's se
 
 That's it! Sure, the details, explanations, and history gets more complicated than that, but the general idea is simple: **HTTP** is a language protocol, extensively used by the internet, to help computers communicate and to help programmers stick to a defined pattern.
 
-We have HTTP requests and HTTP responses. Let's examine at both in turn.
+In diving deeper into HTTP communication, we can identify two clear distinctions: HTTP requests and HTTP responses. Let's examine at both in turn.
 
 #### HTTP-Requests
 
