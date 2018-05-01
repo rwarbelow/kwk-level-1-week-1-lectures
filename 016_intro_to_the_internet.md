@@ -4,8 +4,8 @@ This lesson will take a step back from more technical descriptions/coding skills
 
 ## SWBATS
 
-+ INTERNET - provide a high level description of what a server does 
-+ INTERNET - provide a high level description of what a client is
++ INTERNET - provide a high-level description of what a server does 
++ INTERNET - provide a high-level description of what a client is
 + HTTP - describe the request/response nature of client/server communication
 + HTTP - identify the purposes of response status codes
 
@@ -15,7 +15,7 @@ How many times a day do you use the internet? How many times do you load a diffe
 
 In order to be a web developer it's incredibly important to understand how the web works. From here on out, you are no longer just a user of the internet. You are a creator of the web.
 
-Let's start with the basics: how does a URL turn transform into web content we interact with in the browser? For example, how does this:
+Let's start with the basics: how does a URL transform into web content that we interact with in the browser? For example, how does this:
 
 ```
 https://www.youtube.com/user/AdeleVEVO
@@ -27,13 +27,13 @@ Turn into this:
 
 ## What is a Server
 
-To understand how providing our browser a url fetches website data we need to demystify what a 'server' is. The word itself is used to identify a wide variety of technologies, so let's use a broad, catch-all definition:
+To understand how providing our browser a URL fetches website data we need to demystify what a 'server' is. The word itself is used to identify a wide variety of technologies, so let's use a broad, catch-all definition:
 
-A **server** does exactly what it's name implies: it _serves_ content, files, and data! A server is a computer, sometimes with specialized hardware and sometimes just a laptop like your own.
+A **server** does exactly what its name implies: it _serves_ content, files, and data! A server is a computer, sometimes with specialized hardware and sometimes just a laptop like your own.
 
-A computer/server waits patiently, listening for incoming requests from computers elsewhere. When it receives a request, it does its best to return the relevant information/files/assets (think images, movie data, HTML files, etc.). When we type something like the YouTube url above into the browser and hit enter, a request goes whizzing across many layers of the internet and finds its way to the YouTube servers. 
+A computer/server waits patiently, listening for incoming requests from computers elsewhere. When it receives a request, it does its best to return the relevant information/files/assets (think images, movie data, HTML files, etc.). When we type something like the YouTube URL above into the browser and hit enter, a request goes whizzing across many layers of the internet and finds its way to the YouTube servers. 
 
-Let's pick apart the above url and see how it is used to construct a request. We will see that it is straightforward when you identify its separate components: 
+Let's pick apart the above URL and see how it is used to construct a request. We will see that it is straightforward when you identify its separate components: 
 
 `https://www.youtube.com/user/AdeleVEVO`
 
@@ -42,7 +42,7 @@ Let's pick apart the above url and see how it is used to construct a request. We
 - `/user`: "Now that I'm at the YouTube server, I want to communicate that I am specifically looking for information on a YouTube user."
 - `/AdeleVEVO`: "Even more specifically, I am looking for information on this user."
 
-...and BOOM! The YouTube server receives the request and knows exactly what to respond with: files and information on the user AdeleVEVO. Along with that information, the server also sends back the HTML/CSS/JavaScript that tell the requestor (in this case, the Browser), how to display the information. We refer to this requestor/browser as the **client**.
+...and BOOM! The YouTube server receives the request and knows exactly what to respond with: files and information on the user AdeleVEVO. Along with that information, the server also sends back the HTML/CSS/JavaScript that tells the requestor (in this case, the Browser), how to display the information. We refer to this requestor/browser as the **client**.
 
 ## What is a Client
 
@@ -76,7 +76,7 @@ Just like any spoken language, Hyper Text Transfer Protocol, or **HTTP**, was cr
 
 When we go to youtube.com, our browser sends an HTTP request off to YouTube's servers. When we receive a response, it is in an HTTP format that our browser knows how to interpret and display to us.
 
-That's it! Sure, the details, explanations, and history gets more complicated than that, but the general idea is simple: **HTTP** is a language protocol, extensively used by the internet, to help computers communicate and to help programmers stick to a defined pattern.
+That's it! Sure, the details, explanations, and history get more complicated than that, but the general idea is simple: **HTTP** is a language protocol, extensively used by the internet, to help computers communicate and to help programmers stick to a defined pattern.
 
 In diving deeper into HTTP communication, we can identify two clear distinctions: HTTP requests and HTTP responses. Let's examine at both in turn.
 
@@ -111,6 +111,6 @@ Status codes are an integral part of HTTP-Responses. They are attached to the Re
 
 You are likely familiar with two common status codes already: 200 and 404. A response of 200 signifies that the request was successful, and that the response is sound. 404 signifies that the server did not have whatever we were requesting. 
 
-**NOTE:** Show the students now in the browser an example of a 404 response. Try some common url, (such as `google.com`, but even better if you ask the students to provide one), and then affix some nonsense route to it, (such as `google.com/memes`). We not only get a response with a status of 404 back, but Google is kind enough to send back a custom page for whenever a request is doomed to have a 404 response.
+**NOTE:** Show the students now in the browser an example of a 404 response. Try some common URL, (such as `google.com`, but even better if you ask the students to provide one), and then affix some nonsense route to it, (such as `google.com/memes`). We not only get a response with a status of 404 back, but Google is kind enough to send back a custom page for whenever a request is doomed to have a 404 response.
 
 **NOTE:** Ask the students to use google foo to determine the 5 general types of status codes. Drive home that they are grouped in the hundreds, and that while it's not worthwhile to memorize what each individual status code means right now, it is worthwhile to familiarize yourself with the 5 groups. 
