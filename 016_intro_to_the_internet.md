@@ -6,8 +6,8 @@ This lesson will take a step back from more technical descriptions/coding skills
 
 + INTERNET - provide a high level description of what a server does 
 + INTERNET - provide a high level description of what a client is
-+ INTERNET - describe the request/response nature of client/server communication
-+ INTERNET - identify the purposes of response status codes
++ HTTP - describe the request/response nature of client/server communication
++ HTTP - identify the purposes of response status codes
 
 ## Introduction
 
