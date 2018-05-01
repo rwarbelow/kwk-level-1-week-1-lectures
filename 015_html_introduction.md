@@ -4,13 +4,13 @@
 
 ## Objectives
 
-- Introduce HTML basics
-- Interact with HTML in the browser
+This lesson will focus on introducing students to the essentials of HTML, as well as its real interaction in the browser. As opposed to taking a "memorize the top used tags" approach, this lesson focuses on communicating the higher level concepts of HTML.
 
 ## SWBATS
 
-- Identify the core tags
-- Create a browser ready HTML file
+HTML - Communicate the role of HTML
+HTML - Identify the core tags
+HTML - Create a browser ready HTML file
 
 ## Introduction
 
@@ -115,4 +115,4 @@ Attributes have a wide variety of jobs, from describing the size, color, and oth
 </body>
 ```
 
-Don't worry at this point about memorizing which attributes do what, or which tags are most appropriate where. There are simply too many tags and attributes to memorize in one sitting. Your time is better spent using your Google-fu whenever you encounter an obstacle to displaying what you would in HTML. 
+Don't worry at this point about memorizing which attributes do what, or which tags are most appropriate where. There are simply too many tags and attributes to memorize in one sitting. Your time is better spent using your Google-fu whenever you encounter an obstacle to displaying what you would like to in HTML. 

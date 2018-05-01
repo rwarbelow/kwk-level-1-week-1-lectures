@@ -4,13 +4,11 @@
 
 ## Objectives
 
-- Teach the basics of object-oriented programming
-- Understand what a class is
-- Understand what an instance is
+Students will learn about the basics of object-oriented programming. This lesson will focus on highlighting the basics of both classes and instances, as well as distinguishing them.
 
 ## SWBATS
 
-+ RUBY/OOP - Identify the paradigm
++ RUBY/OOP - Identify the OOP paradigm
 + CLASS - Create a class
 + INSTANCE - Instantiate an instance
 

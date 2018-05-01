@@ -3,10 +3,7 @@
 
 ## Objectives
 
-1. Define a class variable
-2. Define a class method
-3. Understand why and when to use class variables and methods
-4. Understand the scope of class variables and class methods
+The second lesson on object oriented programming will dive deeper into class methods and variables, and further distinguish a Class from the instances it may generate.
 
 ## SWBATS
 
@@ -41,6 +38,7 @@ end
 class Quizzer
 
   # @@ means its a CLASS variable! Capital Q Quizzer owns it!
+  # remember: unlike instances there, is only one of any given Class, so only one Quizzer.periodic_table
   @@periodic_table = []
   
   # self. before a method means its a CLASS method! Our Quizzer has no `initialize` method, and does not make instances.
