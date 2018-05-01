@@ -24,7 +24,7 @@ CSS, or Cascading Style Sheets, is its own language that defines how HTML is dis
   ```html
     <p style="color: blue;">This text will show up blue.</p>
   ```
-  2. CSS rules can also be written separately, but on the same page as HTML.  Using a `<style>` tag inside the `<header>` of an HTML page, we can write something like:
+  2. CSS rules can also be written separately, but on the same page as HTML.  Using a `<style>` tag inside the `<head>` of an HTML page, we can write something like:
   
   ```html
     <head>
