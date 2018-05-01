@@ -44,3 +44,7 @@ CSS, or Cascading Style Sheets, is its own language that defines how HTML is dis
 One thing that is important to note: there are _thousands_ of CSS properties.  We won't be concerned with most of them, and we don't have enough time go too deep into CSS practices, but that is okay.  As we mentioned before, _as long as_ you have an understanding of the syntax for writing CSS rules and understand how to link CSS to HTML, you have all the skills you need to make HTML _look great_.
 
 ## Getting Started with CSS
+
+
+** END PROJECT PERSONAL WEBSITE BASED ON https://html5up.net/ or https://aviflombaum.s3.amazonaws.com/etc/templated-caminar%20%281%29%202.zip
+https://aviflombaum.s3.amazonaws.com/etc/JohnDoe-gh-pages%202.zip **
