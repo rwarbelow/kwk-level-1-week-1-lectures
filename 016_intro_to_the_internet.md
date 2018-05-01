@@ -1,7 +1,5 @@
 # How The Web Works
 
-__Direct Copy of https://github.com/learn-co-curriculum/kwk-l1-how-the-web-works-readme/blob/master/README.md should be edited a bit to be made simpler for students but it's good__
-
 This lesson will take a step back from more technical descriptions/coding skills and focus more on demystifying 'how the internet works'. Specifically, this lesson addresses the server/client distinction as well as HTML requests/responses.
 
 ## SWBATS
