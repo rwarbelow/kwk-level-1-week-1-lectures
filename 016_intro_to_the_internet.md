@@ -50,7 +50,7 @@ As was the case with defining what a server is, a **client** can also refer to a
 
 For example, when we go to the iconic Amazon.com, the first thing Amazon's servers do is send back a whole bunch of files that our browser starts displaying. In this case, the **client** is the combination of the Browser, the bundle of HTML/CSS/JavaScript from Amazon.com, and everything we interact with as users.
 
-#### Client's in the Middle
+#### Clients in the Middle
 
 Consider this: a **client** also acts as a helpful middle layer between us and a server. If we were to go to Amazon.com, it is pretty clear that we don't receive all of the information Amazon servers have to our computers all at once. It wouldn't be practical to send the price, items remaining count, comments, etc. on every single product they offer to every single computer that visits their website (that would be a madhouse!). Instead, we are able to navigate to different areas of the website which load with new information. 
 
@@ -78,7 +78,7 @@ When we go to youtube.com, our browser sends an HTTP request off to YouTube's se
 
 That's it! Sure, the details, explanations, and history get more complicated than that, but the general idea is simple: **HTTP** is a language protocol, extensively used by the internet, to help computers communicate and to help programmers stick to a defined pattern.
 
-In diving deeper into HTTP communication, we can identify two clear distinctions: HTTP requests and HTTP responses. Let's examine at both in turn.
+In diving deeper into HTTP communication, we can identify two clear distinctions: HTTP requests and HTTP responses. Let's examine both in turn.
 
 #### HTTP-Requests
 
@@ -113,4 +113,4 @@ You are likely familiar with two common status codes already: 200 and 404. A res
 
 **NOTE:** Show the students now in the browser an example of a 404 response. Try some common URL, (such as `google.com`, but even better if you ask the students to provide one), and then affix some nonsense route to it, (such as `google.com/memes`). We not only get a response with a status of 404 back, but Google is kind enough to send back a custom page for whenever a request is doomed to have a 404 response.
 
-**NOTE:** Ask the students to use google foo to determine the 5 general types of status codes. Drive home that they are grouped in the hundreds, and that while it's not worthwhile to memorize what each individual status code means right now, it is worthwhile to familiarize yourself with the 5 groups. 
+**NOTE:** Ask the students to use google to determine the 5 general types of status codes. Drive home that they are grouped in the hundreds, and that while it's not worthwhile to memorize what each individual status code means right now, it is worthwhile to familiarize yourself with the 5 groups. 
