@@ -31,11 +31,9 @@ To understand how providing our browser a url fetches website data we need to de
 
 A **server** does exactly what it's name implies: it _serves_ content, files, and data! A server is a computer, sometimes with specialized hardware and sometimes just a laptop like your own.
 
-A computer/server waits patiently, listening for incoming requests from computers elsewhere. When it receives a request, it does its best to return the relevant information/files/assets (think images, movie data, HTML files, etc.). 
+A computer/server waits patiently, listening for incoming requests from computers elsewhere. When it receives a request, it does its best to return the relevant information/files/assets (think images, movie data, HTML files, etc.). When we type something like the YouTube url above into the browser and hit enter, a request goes whizzing across many layers of the internet and finds its way to the YouTube servers. 
 
-When we type something like the YouTube url above into the browser and hit enter, one of these requests goes whizzing across many layers of the internet and finds its way to the Google YouTube servers. 
-
-Let's pick apart the example request. We will see that it is very simple when you know what to distinguish: 
+Let's pick apart the above url and see how it is used to construct a request. We will see that it is straightforward when you identify its separate components: 
 
 `https://www.youtube.com/user/AdeleVEVO`
 
@@ -44,7 +42,7 @@ Let's pick apart the example request. We will see that it is very simple when yo
 - `/user`: "Now that I'm at the YouTube server, I want to communicate that I am specifically looking for information on a YouTube user."
 - `/AdeleVEVO`: "Even more specifically, I am looking for information on this user."
 
-...and BOOM! The YouTube servers receive the request and know exactly what to respond with: their files and information on the user AdeleVEVO. Along with that information, the servers also send back the HTML/CSS/JavaScript that tell the requestor (in this case, the Browser), how to display the information. We can also refer to this requestor/browser as the **client**.
+...and BOOM! The YouTube server receives the request and knows exactly what to respond with: files and information on the user AdeleVEVO. Along with that information, the server also sends back the HTML/CSS/JavaScript that tell the requestor (in this case, the Browser), how to display the information. We refer to this requestor/browser as the **client**.
 
 ## What is a Client
 
