@@ -2,7 +2,7 @@
 
 ## Objectives
 
-Students will learn how CSS makes basic HTML look fantastic and will practice writing basic CSS so they can apply custom styling to their own HTML.
+Students will learn how CSS makes HTML _look fantastic_ and will practice writing basic CSS so they can apply their own custom styling to HTML.
 
 ## SWBATS
 
