@@ -109,6 +109,8 @@ While it all happens very quickly, our computers wait for their HTTP requests to
 
 Status codes are an integral part of HTTP-Responses. They are attached to the Response data and describe, in a general sense, what happened with the request we sent. They can signal anything from: "Hey! The request was successful!" to "Oh my, I think your request blew up the server."
 
-Whether you realize it or not, you are likely intimately familiar with two common status codes already: 200 and 404. A response of 200 signifies that the request was successful, and that the response is sound. 404 signifies that the server did not have whatever we were requesting. 
+You are likely familiar with two common status codes already: 200 and 404. A response of 200 signifies that the request was successful, and that the response is sound. 404 signifies that the server did not have whatever we were requesting. 
 
 **NOTE:** Show the students now in the browser an example of a 404 response. Try some common url, (such as `google.com`, but even better if you ask the students to provide one), and then affix some nonsense route to it, (such as `google.com/memes`). We not only get a response with a status of 404 back, but Google is kind enough to send back a custom page for whenever a request is doomed to have a 404 response.
+
+**NOTE:** Ask the students to use google foo to determine the 5 general types of status codes. Drive home that they are grouped in the hundreds, and that while it's not worthwhile to memorize what each individual status code means right now, it is worthwhile to familiarize yourself with the 5 groups. 
