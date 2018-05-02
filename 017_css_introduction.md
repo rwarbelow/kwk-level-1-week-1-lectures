@@ -68,7 +68,7 @@ During this project, you can use any HTML elements
 CSS Examples for getting off the ground:
 ```css
 .navigation {
-  /* creates bar across top of of screen */
+  /* creates bar across screen if class is assigned to HTML */
   width: 100%;
   height: 50px;
   background-color: lightblue;
