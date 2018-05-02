@@ -59,6 +59,7 @@ is checked for a matching _route_.  In the starter code students have, when they
 enter the IP they were given into the URL bar, their app _heard_ the request,
 went to the ApplicationController and looked to see if the request matched
 anything
+
 ### Cooking Up Some Content
 
 Imagine you're the new chef of a fire star restaurant, and orders are coming in!
@@ -80,20 +81,22 @@ returning whatever it has put together.
 
 The `something` is the specific path requested within a site; everything on the
 URL that immediately follows the base site URL:
+
 ```
 www.new-chef-in-five-star-restaurant.com/spaghetti
 www.new-chef-in-five-star-restaurant.com/sushi
 www.new-chef-in-five-star-restaurant.com/
+159.203.187.180:8080/spaghetti
+localhost:3000/sushi
 ```
 
 In this case, '/spaghetti', '/sushi', _and_ '/' are the specific paths within the site. If there isn't anything after the the base URL, the path is equal to '/'.
 
-All we need to worry about though
+## Writing the Recipe Instructions
 
-Writing a route look very much like the _Ruby methods_ we just learned about.
-
-### #STILL WORKING - Max
-A
+Sinatra knows what to do, its a good cook, we just need to give it the
+instructions - if our application _gets_ `/sushi` or `/` or `/about_page` we
+need to tell Sinatra to what to do in response:
 
 ```ruby
 get '/' do
@@ -101,15 +104,71 @@ get '/' do
 end
 ```
 
-a route with a dynamic response
+Huh... writing these instructions looks very much like the _Ruby methods_ we
+just learned about! In the above example, if our app _gets_ a request for `/`,
+it returns "Hello World".
+
+We can make as many of these as we like..
+
+```ruby
+get '/spaghetti' do
+  "Hello Spaghetti"
+end
+
+get '/sushi' do
+  "Hello Sushi"
+end
+```
+
+And if our Sinatra app _gets_ a request for any of these, it will match our
+instructions and return the correct text!
+
+ [Hello World
+Lab](https://github.com/learn-co-curriculum/kwk-l1-sinatra-hello-world-basics)
+(would love to this to mirror the structure from MVC in the starter as we'll
+never use app.rb in this course)
+
+## Dynamic Responses
+
+Okay, going back to the new chef metaphor.. you're doing great, following the
+cooking instructions, but the owner has decided to expand the menu a bit.  They
+want an _surprise_ special. If a customer orders the `special`, they will get a
+different meal every time.
+
+As the chef, when you get these orders, you look at your instruction book and it
+says:
+
+```
+mix random things together on a plate.
+```
+
+...and so you do. One customer gets spaghetti car_banana_, another gets spicy
+peanut butter, and another gets ice cream filet of shoe sole.  This is a dynamic
+response.  You don't always get the same thing!
+
+Okay, how does this relate to Sinatra? Well, we do something similar: we can
+write instructions for what to do, but those instructions _may not be set in
+stone_.  We could change them as we see fit.. change the response depending on
+the time of day, or return the current time. We could make the response
+_random_.
+
+We just need to give the instructions, and Sinatra will follow them.  Writing a
+route with a dynamic response in Sinatra looks like this:
 
 ```ruby
 get '/random' do
   "#{rand(1..100)}" # Picks a number from 1 to 100
 end
+
+get '/current_date' do
+  Time.now().strftime("%c") # Gets the current time and date, converts it to string format
+end
 ```
 
-But if we wanted a bunch of HTML
+## Return HTML
+
+So far, we've got Sinatra sending single lines of text in resposne to requests,
+but what if we wanted a bunch of HTML, instead?
 
 ```ruby
 get '/random' do
@@ -117,15 +176,37 @@ get '/random' do
 end
 ```
 
-thats not going to work
+Thats not going to work. We've seen HTML, too. We wouldn't want a whole HTML
+page listed out like this.. it would be impossible to read.
 
-so we have templates
+Instead of serving up strings, like we've done so far, Sinatra can serve up
+_files_.
+
+Back on our Sinatra starter code again:
+
+In our ApplicationController:
 
 https://github.com/learn-co-curriculum/kwk-sinatra-starter/blob/master/app/controllers/application_controller.rb#L9
 
+We've got a familiar looking `get` route here, but instead of returning a
+string, we've got `erb: 'index.html'`.
+
+In a nearby folder, `app/views/`, we have a file called `index.html.erb`:
+
 https://github.com/learn-co-curriculum/kwk-sinatra-starter/blob/master/app/views/index.html.erb
 
-Cover ERB <% %> and <%= %>
+This is how Sinatra serves up whole webpages. Using ERB files (embedded Ruby),
+we can write HTML just as we were doing earlier this week, and have Sinatra serve
+them at specific routes.
+
+## ERB <% %> and <%= %>
+
+We've got one more thing to talk about.  On `index.html.erb`, there is something
+new that we haven't seen yet.
+
+There is _Ruby_ inside of our HTML! The `rand(1..100)` and `Time.now().strftime("%c")` methods we saw earlier when talking about dynamic responses... are _inside_ our HTML content.
+
+We do this with ERB! Any time we want some dynamic content 
 
 If we return HTML,
 
@@ -134,4 +215,3 @@ That's sinatra basics
 **HELLO WORLD LAB**
 
 https://github.com/learn-co-curriculum/kwk-l1-sinatra-organizer
-https://github.com/learn-co-curriculum/kwk-l1-sinatra-hello-world-basics (would love to this to mirror the structure from MVC in the starter as we'll never use app.rb in this course)
