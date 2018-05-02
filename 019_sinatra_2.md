@@ -14,6 +14,10 @@ We also have templates of ERB
 
 ** Models **
 
+Let's get some of our objects from OO into our sinatra app.
+
+https://github.com/learn-co-curriculum/kwk-l1-sinatra-periodic-table
+
 ** More Routes **
 
 
