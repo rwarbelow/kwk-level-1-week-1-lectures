@@ -131,8 +131,8 @@ The Command Line is an incredibly valuable tool that lets you manipulate configu
 
 ## Hints and Hurdles
 
-+ The [Pets Organizer](https://github.com/learn-co-curriculum/kwk-l1-find-missing-pet) lab really hammers home paths. This is an important concept for students as they begin to create HTML/CSS projects and then their sinatra apps at the end of the course. Paths are a complicated concept- let students know its ok if it doesn't make sense right away.
++ The [Pets Organizer]<!-- (https://github.com/learn-co-curriculum/kwk-l1-find-missing-pet) --> lab really hammers home paths. This is an important concept for students as they begin to create HTML/CSS projects and then their sinatra apps at the end of the course. Paths are a complicated concept- let students know its ok if it doesn't make sense right away.
 
-+ Bonus Labs are the [Terminus Game](https://github.com/learn-co-curriculum/kwk-l1-cli-stayfresh) and the [Command Line Challenge](https://github.com/learn-co-curriculum/kwk-l1-advanced-cli)
++ Bonus Labs are the [Terminus Game](https://github.com/learn-co-curriculum/kwk-l1-cli-stayfresh) and the [Command Line Challenge]<!-- (https://github.com/learn-co-curriculum/kwk-l1-advanced-cli) -->
 
 + Helps to have students write out the instructions if they were moving one step at a time `cd code`, `cd labs` and then show them how they can shorten that `cd code/labs`.

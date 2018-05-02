@@ -37,7 +37,7 @@ From the learn.co home page, students should click on to the lab called 'First
 IDE Lab' found in the _Curriculum_ tab at the top left of the screen. This will
 redirect to their first lab.
 
-[https://github.com/learn-co-curriculum/kwk-l1-first-ide-lab](https://github.com/learn-co-curriculum/kwk-l1-first-ide-lab)
+<!-- [https://github.com/learn-co-curriculum/kwk-l1-first-ide-lab](https://github.com/learn-co-curriculum/kwk-l1-first-ide-lab)  -->
 
 Once students have opened this lesson, they have two options for how to interact
 with and use learn: the In-Browser IDE and the Desktop IDE.  

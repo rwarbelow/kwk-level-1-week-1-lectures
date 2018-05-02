@@ -114,7 +114,7 @@ y = 2
 x < y && x < 0 #> false
 ```
 
-**In pairs, work on [Logic Quiz](https://github.com/learn-co-curriculum/kwk-l1-logic-quiz)** 10 Minutes
+**In pairs, work on [Logic Quiz]<!-- (https://github.com/learn-co-curriculum/kwk-l1-logic-quiz) -->** 10 Minutes
 
 Review Quiz - 5-10 minutes.
 
@@ -159,9 +159,9 @@ Break that down for students, covering `if`, `elsif`, and `else`
 
 ### Lab Options - 20-30 minutes.
 
-1. Introduce the `%` modulor or remainder functionality and have them try to solve [Fizzbuzz Lab](https://github.com/learn-co-curriculum/kwk-l1-fizzbuzz) - This lab is good because it shows the order of the statements mattering and it's a classic interview question and you can say lots of programmers can't solve it :-)
+1. Introduce the `%` modulor or remainder functionality and have them try to solve [Fizzbuzz Lab]<!-- (https://github.com/learn-co-curriculum/kwk-l1-fizzbuzz) --> - This lab is good because it shows the order of the statements mattering and it's a classic interview question and you can say lots of programmers can't solve it :-)
 
-2. [Curfew Checker](https://github.com/learn-co-curriculum/kwk-l1-curfew-checker)
+2. [Curfew Checker]<!-- (https://github.com/learn-co-curriculum/kwk-l1-curfew-checker) -->
 
-3. [Conditional Diet](https://github.com/learn-co-curriculum/kwk-l1-conditional-diet-lab) - I don't like this lab as diets suck.
-
+<!-- 3. [Conditional Diet](https://github.com/learn-co-curriculum/kwk-l1-conditional-diet-lab) - I don't like this lab as diets suck.
+ -->

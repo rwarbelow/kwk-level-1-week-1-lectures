@@ -124,7 +124,7 @@ Just like we described with `puts` taking the result of `array[index]`, we are a
 
 **SHOULD HAVE A SIMPLE LAB/CODEALONG ABOUT EDITING/PUSHING DATA TO AN ARRAY, LIKE A SPOT CORRECTION IN COLORS OF THE RAINBOW**
 
-https://github.com/learn-co-curriculum/kwk-l1-manipulating-arrays-mini-lab
+<!-- https://github.com/learn-co-curriculum/kwk-l1-manipulating-arrays-mini-lab -->
 
 #### Getting and Using the Size
 
@@ -168,10 +168,10 @@ Here, we see the beginnings of how we can meaningfully use all of the elements i
 
 Going forward, we will look at even more convenient ways to do this common pattern of doing something with every element of an array.
 
-https://github.com/learn-co-curriculum/kwk-l1-array-pattern-lab
+<!-- https://github.com/learn-co-curriculum/kwk-l1-array-pattern-lab -->
 
-https://github.com/learn-co-curriculum/kwk-l1-array-iteration-mini-lab
+<!-- https://github.com/learn-co-curriculum/kwk-l1-array-iteration-mini-lab -->
 
-https://github.com/learn-co-curriculum/kwk-l1-elective-arrays-lab
+<!-- https://github.com/learn-co-curriculum/kwk-l1-elective-arrays-lab -->
 
-https://github.com/learn-co-curriculum/kwk-youtube-arrays
+<!-- https://github.com/learn-co-curriculum/kwk-youtube-arrays -->

@@ -183,9 +183,9 @@ greeting(a,b,c,d)
 
 **Method Argument Labs** 20 Minutes Max
 
-[Parrot Methods](https://github.com/learn-co-curriculum/kwk-l1-parrot-methods-lab)
-[Cell Transport Methods Lab](https://github.com/learn-co-curriculum/kwk-l1-cell-transport-methods-lab)
-[Geometry Formulas Methods Lab](https://github.com/learn-co-curriculum/kwk-l1-geometry-formuals-methods-lab)
+[Parrot Methods]<!-- (https://github.com/learn-co-curriculum/kwk-l1-parrot-methods-lab) -->
+[Cell Transport Methods Lab]<!-- (https://github.com/learn-co-curriculum/kwk-l1-cell-transport-methods-lab) -->
+[Geometry Formulas Methods Lab]<!-- (https://github.com/learn-co-curriculum/kwk-l1-geometry-formuals-methods-lab) -->
 
 ## Default Arguments - 5 Minutes
 
@@ -218,6 +218,6 @@ We tend to keep our arguments with defaults last, anyone want to guess why?
 
 **Default Argument Labs** 15 minutes
 
-[Say Hello](https://github.com/learn-co-curriculum/kwk-l1-say-hello-methods-ruby)
-[Meal Choice](https://github.com/learn-co-curriculum/kwk-l1-ruby-2-meal-choice-lab)
-[Mother’s Day](https://github.com/learn-co-curriculum/kwk-l1-mothers-day-methods)
+[Say Hello]<!-- (https://github.com/learn-co-curriculum/kwk-l1-say-hello-methods-ruby) -->
+[Meal Choice]<!-- (https://github.com/learn-co-curriculum/kwk-l1-ruby-2-meal-choice-lab) -->
+[Mother’s Day]<!-- (https://github.com/learn-co-curriculum/kwk-l1-mothers-day-methods) -->
