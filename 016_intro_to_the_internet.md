@@ -113,4 +113,4 @@ You are likely familiar with two common status codes already: 200 and 404. A res
 
 **NOTE:** Show the students now in the browser an example of a 404 response. Try some common url, (such as `google.com`, but even better if you ask the students to provide one), and then affix some nonsense route to it, (such as `google.com/memes`). We not only get a response with a status of 404 back, but Google is kind enough to send back a custom page for whenever a request is doomed to have a 404 response.
 
-**NOTE:** Ask the students to use google foo to determine the 5 general types of status codes. Drive home that they are grouped in the hundreds, and that while it's not worthwhile to memorize what each individual status code means right now, it is worthwhile to familiarize yourself with the 5 groups. 
+**NOTE:** Ask the students to use google foo to determine the 5 general types of status codes. Drive home that they are grouped in the hundreds, and that while it's not worthwhile to memorize what each individual status code means right now, it is worthwhile to familiarize yourself with the 5 groups.  
