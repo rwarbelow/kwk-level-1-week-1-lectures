@@ -56,18 +56,44 @@ to teach with.  Additional challenges are listed as well as suggestions.
 ## Building Our Own Websites
 
 HTML and CSS are all you need to build a great looking website.  Building a website
-is also a great way to get better at HTML and CSS!
+is also a great way to get better at HTML and CSS!  This site can be about anything, and should
+use all of the concepts we've learned today.  Use a variety of HTML tags and CSS classes to create different sections on the page.
 
 [Building My Own HTML Website](https://github.com/learn-co-curriculum/kwk-l1-my-own-html-website)
 
-*Note:* students should first plan out their site, spend some time thinking about what should be on the site, what HTML elements they'll need and in what order.
+During this project, you can use any HTML elements
+
+*Note:* students should first plan out their site, spend some time thinking about what should be on the site, what HTML elements they'll need and in what order.  Students may forget to link to the separate CSS file in their HTML.
+
+CSS Examples for getting off the ground:
+```css
+.navigation {
+  /* creates bar across screen if class is assigned to HTML */
+  width: 100%;
+  height: 50px;
+  background-color: lightblue;
+}
+
+h1 {
+  /* centered, very large header */
+  text-align: center;
+  font-size: 400%;
+}
+
+body {
+  /* sets background image. Can also play animated gifs */
+  background: url(an_image_OR_animated_gif_from_the_internet);
+  background-size: contain;
+}
+```
 
 ### References:
 
-[CSS Full Reference Sheet](https://cloud.netlifyusercontent.com/assets/344dbf88-fdf9-42bb-adb4-46f01eedd629/d7fb67af-5180-463d-b58a-bfd4a220d5d0/css3-cheat-sheet.pdf)
-[CSS Reference](https://www.w3schools.com/cssref/default.asp)
+* [CSS Full Reference Sheet](https://cloud.netlifyusercontent.com/assets/344dbf88-fdf9-42bb-adb4-46f01eedd629/d7fb67af-5180-463d-b58a-bfd4a220d5d0/css3-cheat-sheet.pdf)
+* [CSS Reference](https://www.w3schools.com/cssref/default.asp)
 
 ### Additional CSS Labs:
 
-[CSS Selectors](https://github.com/learn-co-curriculum/upperline-hs-intro-software-engineering-css-selectors)
-[Empire State Mock Site](https://github.com/learn-co-curriculum/upperline-hs-empire-state-css-challenge)
+* [CSS Selectors](https://github.com/learn-co-curriculum/upperline-hs-intro-software-engineering-css-selectors)
+* [Empire State Mock Site](https://github.com/learn-co-curriculum/upperline-hs-empire-state-css-challenge)
+* [Zetsy](https://github.com/learn-co-curriculum/kwk-l1-zetsy)
