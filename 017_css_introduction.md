@@ -64,10 +64,11 @@ is also a great way to get better at HTML and CSS!
 
 ### References:
 
-[CSS Full Reference Sheet](https://cloud.netlifyusercontent.com/assets/344dbf88-fdf9-42bb-adb4-46f01eedd629/d7fb67af-5180-463d-b58a-bfd4a220d5d0/css3-cheat-sheet.pdf)
-[CSS Reference](https://www.w3schools.com/cssref/default.asp)
+* [CSS Full Reference Sheet](https://cloud.netlifyusercontent.com/assets/344dbf88-fdf9-42bb-adb4-46f01eedd629/d7fb67af-5180-463d-b58a-bfd4a220d5d0/css3-cheat-sheet.pdf)
+* [CSS Reference](https://www.w3schools.com/cssref/default.asp)
 
 ### Additional CSS Labs:
 
-[CSS Selectors](https://github.com/learn-co-curriculum/upperline-hs-intro-software-engineering-css-selectors)
-[Empire State Mock Site](https://github.com/learn-co-curriculum/upperline-hs-empire-state-css-challenge)
+* [CSS Selectors](https://github.com/learn-co-curriculum/upperline-hs-intro-software-engineering-css-selectors)
+* [Empire State Mock Site](https://github.com/learn-co-curriculum/upperline-hs-empire-state-css-challenge)
+* [Zetsy](https://github.com/learn-co-curriculum/kwk-l1-zetsy)
