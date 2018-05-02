@@ -165,7 +165,7 @@ get '/current_date' do
 end
 ```
 
-## Return HTML
+## Returning HTML
 
 So far, we've got Sinatra sending single lines of text in resposne to requests,
 but what if we wanted a bunch of HTML, instead?
@@ -189,7 +189,7 @@ In our ApplicationController:
 https://github.com/learn-co-curriculum/kwk-sinatra-starter/blob/master/app/controllers/application_controller.rb#L9
 
 We've got a familiar looking `get` route here, but instead of returning a
-string, we've got `erb: 'index.html'`.
+string, we've got `erb :'index.html'`.
 
 In a nearby folder, `app/views/`, we have a file called `index.html.erb`:
 
@@ -199,19 +199,80 @@ This is how Sinatra serves up whole webpages. Using ERB files (embedded Ruby),
 we can write HTML just as we were doing earlier this week, and have Sinatra serve
 them at specific routes.
 
-## ERB <% %> and <%= %>
+## ERB <%= %> and <% %>
 
-We've got one more thing to talk about.  On `index.html.erb`, there is something
-new that we haven't seen yet.
+In our starter app, on `index.html.erb`, there is something new that we haven't
+seen yet.
 
-There is _Ruby_ inside of our HTML! The `rand(1..100)` and `Time.now().strftime("%c")` methods we saw earlier when talking about dynamic responses... are _inside_ our HTML content.
+There is _Ruby_ inside of our HTML! The `rand(1..100)` and
+`Time.now().strftime("%c")` methods we saw earlier when talking about dynamic
+responses... are _inside_ our HTML content.
 
-We do this with ERB! Any time we want some dynamic content 
+We do this with ERB! Any time we want some dynamic content we can inject it into
+our HTML simply by wrapping the Ruby in the following tags: `<%= %>`. These are
+_special_ wrappers. When the file is read by Sinatra as it prepares to respond
+to a request, these tags will be read and executed just like lines of Ruby code.
 
-If we return HTML,
+```html
+<p>The time is now: <%= Time.now() %></p>
+```
 
-That's sinatra basics
+This example will always return the exact time when the HTML page was read by
+Sinatra.
 
-**HELLO WORLD LAB**
+There are two types of wrappers we need to use.  The one we've seen is `<%= %>`.
+This executes Ruby code, and then _prints_ it as HTML. This is how we get the
+dynamic examples we've seen.
+
+There is a second one: `<% %>`. This wrapper looks similar, but is missing the `=`
+symbol.  Code written in this wrapper will execute, _but will not print_.
+
+This may not seem very helpful at first, but what it does is allows us to run
+multiple lines of Ruby inside our HTML and only display what _we_ choose to
+display.  Doing this gives us the ability to put all kinds of code in our HTML
+pages!
+
+One great example: conditional statements.
+
+```html
+<% if Time.now().day === 2 %>
+  <p>It's Tuesday My Friends!</p>
+<% else %>
+  <p>It's not Tuesday :(</p>
+<% end %>
+```
+
+If the above code was placed within a `index.html.erb` in our starter code,
+it would display 'It's Tuesday My Friends!' _only_ on Tuesdays.
+
+Remember, `<%= %>` will print whatever is return from the Ruby inside, `<% %>`
+will just execute the Ruby.
+
+**Students should try to add in ERB tags to `index.html.erb` and try different things. A good challenge: create a conditional in ERB that returns heads or tails based on a random number.**
+
+### Variables
+
+Not only can you write Ruby inside HTML.. you can also _pass_ Ruby variables into
+the HTML files.. _from ApplicationController_.
+
+```ruby
+get `/sushi` do
+  @sushi = "spicy tuna rolls"
+  erb :'index.html'
+end
+```
+
+```html
+<p> I really love <%= @sushi %></p>
+```
+
+Added to `index.html.erb`, the above line will print "I really love spicy tuna rolls"! Make sure every variable starts with `@`.  This is necessary for ERB to execute correctly.
+
+**Students should try creating variables in the ApplicationController**
+
+# That's Sinatra basics!
+
+Phew! That was a lot to process, but with a little practice, you can use what
+you're learning today to build _all kinds_ of dynamic web applications!
 
 https://github.com/learn-co-curriculum/kwk-l1-sinatra-organizer
