@@ -44,7 +44,7 @@ One thing that is important to note: There are _thousands_ of CSS properties.  W
 
 ## Getting Started with CSS
 
-Learning CSS is definitely a hands on process, so the code along linked below
+Learning CSS is definitely a hands-on process, so the codealong linked below
 should be used by each student as we go through some of the CSS basics.
 
 [The Ultimate CSS Walkthrough](https://github.com/learn-co-curriculum/kwk-l1-css-walkthrough-code-along)
