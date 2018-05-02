@@ -79,9 +79,7 @@ h1 {
   text-align: center;
   font-size: 400%;
 }
-```
 
-```
 body {
   /* sets background image. Can also play animated gifs */
   background: url(an_image_OR_animated_gif_from_the_internet);
