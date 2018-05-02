@@ -75,6 +75,8 @@ https://github.com/learn-co-curriculum/kwk-sinatra-starter/blob/master/app/contr
 
 https://github.com/learn-co-curriculum/kwk-sinatra-starter/blob/master/app/views/index.html.erb
 
+Cover ERB <% %> and <%= %>
+
 That's sinatra basics
 
 **HELLO WORLD LAB**
