@@ -2,9 +2,10 @@
 
 ## Objective
 
-Students understand how to start lab work on Learn, run the tests with the
-`learn` command, and submit a lab with `learn submit`. Students also understand
-how to use the Sandbox environment.
+Teach students how to start lab work on Learn.co, run tests with the
+`learn` command, and submit a lab with `learn submit`. Additionally, 
+teach students how to use the Sandbox environment.
+
 ## SWABTS
 
 + USING LEARN - Open a lab with the "Open" or "Open IDE" button
@@ -14,7 +15,7 @@ how to use the Sandbox environment.
 
 ## Introductions
 
-Welcome!!!! We're thrilled that you've all joined our community of learners and
+Welcome! We are thrilled that you joined our community of learners and
 are using learn.co! The Learn.co platform is used to deliver lesson content to
 students, and includes its own development environment, the In-Browser IDE,
 where you will be able to write and test code, solve problems, and most
