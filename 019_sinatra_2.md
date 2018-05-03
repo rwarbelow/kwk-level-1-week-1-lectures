@@ -54,7 +54,7 @@ wont appear availabe in the template you render. has to be
 ```
 
 STRETCH
-6. Can they do a find by name, like a URL `/element/hydrogen` requires a new model method, requires a new dynamic route, can re-use the element via, and requires a new navigational list. **Notice that they have to copy it over twice, leads to layouts, once in index and once in element**
+6. Can they do a find by name, like a URL `/elements/hydrogen` requires a new model method, requires a new dynamic route, can re-use the element via, and requires a new navigational list. **Notice that they have to copy it over twice, leads to layouts, once in index and once in element**
 
 Solve the lab with the students
 
@@ -64,10 +64,14 @@ SOLVE STRETCH GOALS
 
 ** More Routes **
 
-
-
-
 ** Dynamic Personal Site **
+
+Break for Personal Site Project
+
+Spotify API https://beta.developer.spotify.com/dashboard/applications
+https://github.com/learn-co-curriculum/sinatra-personal-web-app
+
+Themes
 
 ** Forms **
 
