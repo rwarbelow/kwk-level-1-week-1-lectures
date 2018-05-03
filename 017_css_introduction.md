@@ -44,7 +44,7 @@ One thing that is important to note: There are _thousands_ of CSS properties.  W
 
 ## Getting Started with CSS
 
-Learning CSS is definitely a hands on process, so the code along linked below
+Learning CSS is definitely a hands-on process, so the codealong linked below
 should be used by each student as we go through some of the CSS basics.
 
 [The Ultimate CSS Walkthrough](https://github.com/learn-co-curriculum/kwk-l1-css-walkthrough-code-along)
@@ -56,7 +56,7 @@ to teach with.  Additional challenges are listed as well as suggestions.
 ## Building Our Own Websites
 
 HTML and CSS are all you need to build a great looking website.  Building a website
-is also a great way to get better at HTML and CSS!  This site can be about anything, and should 
+is also a great way to get better at HTML and CSS!  This site can be about anything, and should
 use all of the concepts we've learned today.  Use a variety of HTML tags and CSS classes to create different sections on the page.
 
 [Building My Own HTML Website](https://github.com/learn-co-curriculum/kwk-l1-my-own-html-website)
