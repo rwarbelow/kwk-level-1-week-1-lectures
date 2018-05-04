@@ -107,11 +107,11 @@ something to do.
 If students have built out their HTML and are not sure what to do next, they
 can try to add stretch features, such as:
 
-* Add the same navigation to each page on the app, that links all pages.
-* Add video using the HTML `<video>` element
-* Add bootstrap (using a link to their CDN in the HTML head) and additional
-styling
-* Add buttons
+  * Add buttons and forms using dynamic routes
+  * Add the same navigation to each page on the app, that links all pages.
+  * Add video using the HTML `<video>` element
+  * Add bootstrap (using a link to their CDN in the HTML head) and additional
+  styling
 
 ### Finishing Up
 
