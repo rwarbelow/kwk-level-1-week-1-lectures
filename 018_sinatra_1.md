@@ -20,11 +20,11 @@ request
 
 **NOTE:** You will be walking students through a sample Sinatra app. Starter code has been provided: [KWK Sinatra Starter](https://github.com/learn-co-curriculum/kwk-sinatra-starter)
 
-**Students should open [KWK Sinatra Starter](https://github.com/learn-co-curriculum/kwk-sinatra-starter) in the Sandbox**
+**Students should open [KWK Sinatra Starter](https://github.com/learn-co-curriculum/kwk-sinatra-starter) in the Sandbox.**
 
-**Everyone type in shotgun and go to the IP address of your server in your browser**
+**Everyone should type in shotgun and go to the IP address of your server in your browser.**
 
-**Hit refresh a few times, notice it changes the content every time, that's because ruby is processing this request every time and can dynamically generate a response**
+**Hit refresh a few times, notice it changes the content every time, that's because ruby is processing this request every time and can dynamically generate a response.**
 
 Let's follow the flow of how this program started:
 
