@@ -1,12 +1,14 @@
-## Welcome to Kode with Klossy Week 1 Lectures!
+## Welcome to Kode with Klossy Lectures!
 
-#### In this repository you'll find the fourteen lectures that will be delivered in the first of two weeks.
+#### In this repository you'll find the twenty lectures that will be delivered across both weeks.
 
 Below is a day-by-day schedule that aligns each topic with the day of the week that it will be delivered.
 
 
 
-### Schedule Overview
+## Schedule Overview
+
+### Week 1
 
 |    Day    |                         Topic & Link                         |                           Details                            |
 | :-------: | :----------------------------------------------------------: | :----------------------------------------------------------: |
