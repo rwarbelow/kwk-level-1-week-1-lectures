@@ -2,7 +2,7 @@
 
 ## Objectives
 
-Introduce students to Sinatra will and practice generating web content using a route written in Ruby.
+Introduce students to Sinatra and practice generating web content using a route written in Ruby.
 
 ## SWBATS
 
@@ -14,20 +14,19 @@ request
 
 **Sinatra is a Ruby Application that can respond to HTTP Requests**
 
-- It's a program that's always on once started; it's sitting waiting for web requests
+- It's a program that's always on once started; it listens for web requests
 - Start your Sinatra application by running `shotgun config.ru` in the terminal
 - `config.ru` is a Ruby file that tells Sinatra how to run your application.
 
-** Starter Sinatra Application **
-Use [KWK Sinatra Starter](https://github.com/learn-co-curriculum/kwk-sinatra-starter)
+**NOTE:** You will be walking students through a sample Sinatra app. Starter code has been provided: [KWK Sinatra Starter](https://github.com/learn-co-curriculum/kwk-sinatra-starter)
 
-**Students should open [KWK Sinatra Starter](https://github.com/learn-co-curriculum/kwk-sinatra-starter) in the Sandbox or we make it into a lab so that we can walk through it**
+**Students should open [KWK Sinatra Starter](https://github.com/learn-co-curriculum/kwk-sinatra-starter) in the Sandbox**
 
-**Everyone type in shotgun and go to the IP address of your server**
+**Everyone type in shotgun and go to the IP address of your server in your browser**
 
 **Hit refresh a few times, notice it changes the content every time, that's because ruby is processing this request every time and can dynamically generate a response**
 
-Let's follow the flow of how this program started
+Let's follow the flow of how this program started:
 
 First, `config.ru` runs
 https://github.com/learn-co-curriculum/kwk-sinatra-starter/blob/master/config.ru
