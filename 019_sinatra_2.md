@@ -74,7 +74,7 @@ https://github.com/learn-co-curriculum/sinatra-personal-web-app
 
 You will notice that, in addition to a solution for the previous deliverables, two additional views and routes are available. These new views and routes are used to both get a "make a new element" form, as well as return the result in HTML. The following should be walked through with the students:
 
-1. Explain how we are going to make use of `POST` requests in our Sinatra app. This means we will be taking data from user submitted forms and _doing something_ with it. Before, we were just looking up an element via a dynamic variable parsed out of a URL. Now, we will be taking in more data from a form and making use of it. 
+1. Explain how we are going to make use of `POST` requests in our Sinatra app. This means we will be taking data from user submitted forms and doing something with it behind the scenes. Before, we were just looking up an element via a dynamic variable parsed out of a URL. Now, we will be taking in more data from a form and making use of it. 
 
 2. Following, take a look at the new routes. Query the students as to what they think each does. One of them is to return the view that has the HTML form itself. The other one (the one marked `post`) is to digest the submitted forms information and then return the view that displays the results.
 
