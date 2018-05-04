@@ -2,12 +2,11 @@
 
 ## Objectives
 
-Students will dive in to Sinatra and practice generating web content using a
-route written in Ruby.
+Introduce students to Sinatra will and practice generating web content using a route written in Ruby.
 
 ## SWBATS
 
-- Practice serving basic web pages from different routes on the same app
+- Serve basic web pages from different routes on the same app
 - Understand how Ruby allows us to handle dynamic information and serve it on
 request
 
