@@ -112,3 +112,28 @@ can try to add stretch features, such as:
 * Add bootstrap (using a link to their CDN in the HTML head) and additional
 styling
 * Add buttons
+
+### Finishing Up
+
+If students would like to publish their work to show the world, they can do so
+for free using [Heroku](heroku.com).  The project is currently on one student's
+kwk-sinatra-starter repository. To publish the app, that student will need to:
+
+  * Create a free Heroku account and connect their GitHub account
+  * Choose to **New** and create a new app on Heroku's website
+  * Name the app (this will be in the URL, so name it something relevant to the app
+  you built), and create it
+  * You should be directed to the _Deploy_ page. Scroll down and in the 'Deployment
+  Method' section, click **GitHub**.
+  * Just below Deployment Method, you should be able to search for a repository on
+your account.
+  * The repository name is the name of the project folder you see on the learn IDE,
+starting with 'kwk-sinatra-starter...'
+  * Click connect when the repository is found
+  * Click **Enable Automatic Deploys**
+  * Click **Deploy Branch**
+
+Deploying will open a small terminal on the page that runs through the process.
+If all goes well, the terminal will display Done, and a **View** button should
+appear linking to your newly deployed site.  If students continue to work on
+the project, the updates should show up, though may not be immediate.
