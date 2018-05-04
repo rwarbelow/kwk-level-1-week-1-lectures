@@ -8,6 +8,10 @@ Teach students how to create dynamic routes by parsing variables out of urls. Ad
 
 ## SWBATS
 
+- SINATRA: Incorporate models (Ruby Classes) into their applications
+- SINATRA: Use dynamic urls to instantiate models and return templated views
+- SINATRA: Identify the use for post requests and forms
+
 ## Introduction
 
 Having explored routes (responding to specific URLs) and views (returning erb templates) in the previous lecture, we will now turn our attention towards data models.

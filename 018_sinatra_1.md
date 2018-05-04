@@ -6,8 +6,8 @@ Introduce students to Sinatra will and practice generating web content using a r
 
 ## SWBATS
 
-- Serve basic web pages from different routes on the same app
-- Understand how Ruby allows us to handle dynamic information and serve it on
+- SINATRA: Serve basic web pages from different routes on the same app
+- SINATRA: Understand how Sinatra allows us to handle dynamic information and serve it on
 request
 
 ## Introduction
@@ -25,7 +25,7 @@ Use [KWK Sinatra Starter](https://github.com/learn-co-curriculum/kwk-sinatra-sta
 
 **Everyone type in shotgun and go to the IP address of your server**
 
-**Hit refresh a few times, notice it changes the content everytime, that's because ruby is processing this request everytime and can dynamically generate a response**
+**Hit refresh a few times, notice it changes the content every time, that's because ruby is processing this request every time and can dynamically generate a response**
 
 Let's follow the flow of how this program started
 
