@@ -60,7 +60,7 @@ anything
 
 ### Cooking Up Some Content
 
-Imagine you're the new chef of a fire star restaurant, and orders are coming in!
+Imagine you're the new chef of a five star restaurant, and orders are coming in!
 You're still pretty new, but luckily, you've been given a book of instructions
 on how to make each meal a customer can order.
 
@@ -88,11 +88,11 @@ www.new-chef-in-five-star-restaurant.com/
 localhost:3000/sushi
 ```
 
-In this case, '/spaghetti', '/sushi', _and_ '/' are the specific paths within the site. If there isn't anything after the the base URL, the path is equal to '/'.
+In this case, '/spaghetti', '/sushi', _and_ '/' are the specific paths within the site. If there isn't anything after the base URL, the path is equal to '/'.
 
 ## Writing the Recipe Instructions
 
-Sinatra knows what to do, its a good cook, we just need to give it the
+Sinatra knows what to do, it's a good cook, we just need to give it the
 instructions - if our application _gets_ `/sushi` or `/` or `/about_page` we
 need to tell Sinatra to what to do in response:
 
@@ -106,7 +106,7 @@ Huh... writing these instructions looks very much like the _Ruby methods_ we
 just learned about! In the above example, if our app _gets_ a request for `/`,
 it returns "Hello World".
 
-We can make as many of these as we like..
+We can make as many of these as we like.
 
 ```ruby
 get '/spaghetti' do
@@ -165,7 +165,7 @@ end
 
 ## Returning HTML
 
-So far, we've got Sinatra sending single lines of text in resposne to requests,
+So far, we've got Sinatra sending single lines of text in response to requests,
 but what if we wanted a bunch of HTML, instead?
 
 ```ruby
@@ -174,7 +174,7 @@ get '/random' do
 end
 ```
 
-Thats not going to work. We've seen HTML, too. We wouldn't want a whole HTML
+That's not going to work. We've seen HTML, too. We wouldn't want a whole HTML
 page listed out like this.. it would be impossible to read.
 
 Instead of serving up strings, like we've done so far, Sinatra can serve up
