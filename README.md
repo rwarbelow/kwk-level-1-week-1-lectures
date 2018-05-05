@@ -36,7 +36,7 @@ Below is a day-by-day schedule that aligns each topic with the day of the week t
 |  Monday   | [Intro to CSS](https://github.com/learn-co-curriculum/kwk-level-1-lecture-017-css-introduction) | How CSS chanes the way HTML looks, and practice writing basic CSS to apply custom styling |
 |  Tuesday  | [Intro to the Internet](https://github.com/learn-co-curriculum/kwk-level-1-lecture-016-intro-to-the-internet) | Demystifies the World Wide Web, addressing the server/client distinction as well as HTML requests/responses |
 |  Tuesday  | [Sinatra Part 1](https://github.com/learn-co-curriculum/kwk-level-1-lecture-018-sinatra-1) | Introduction to Sinatra, practice generating web content using a route written in Ruby |
-|  Tuesday  | [Sinatra Part 2](https://github.com/learn-co-curriculum/kwk-level-1-lecture-018-sinatra-2) | Create dynamic routes by parsing variables out of URLs, and an overview of Forms. |
+|  Tuesday  | [Sinatra Part 2](https://github.com/learn-co-curriculum/kwk-level-1-lecture-019-sinatra-2) | Create dynamic routes by parsing variables out of URLs, and an overview of Forms. |
 | Wednesday | [Project Mode](https://github.com/learn-co-curriculum/kwk-level-1-lecture-020-project-guidelines) Day 1 | General guidelines and specifictions about the Final Project. |
 | Thursday  | [Project Mode](https://github.com/learn-co-curriculum/kwk-level-1-lecture-020-project-guidelines) Day 2 | General guidelines and specifictions about the Final Project. |
 |  Friday   | [Demo](https://github.com/learn-co-curriculum/kwk-level-1-lecture-021-demo-guidelines) and graduation | General guidelines and specifictions about demonstrating the Final Project. |
