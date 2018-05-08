@@ -65,7 +65,7 @@ As we saw yesterday, that doesn't work. The reason why is an important programmi
 
 Variables have a locale, a place where they exist. We call the place in which a variable exists a "scope."
 
-**NEED GOOD SCOPE METAPHOR OR EXAMPLE - SOMETHING THAT EXISTS IN DIFFERENT PLACES, IS CALLED THE SAME, BUT GETS ITS OWN DEFINITION**
+Think of the word "principal". In your school, the principal might be Ms. Jones. But in your friend's school, the principal might be Mr. Castillo. This is an example of what we mean by scope. Another example of this is the word governor. In different states, saying the word "governor" makes people think of different things. Can you think of another example of a word, like principal or governor, that might mean different things in different places? 
 
 Because of variable scope, a method only have access to information defined within it. We could do the following:
 
